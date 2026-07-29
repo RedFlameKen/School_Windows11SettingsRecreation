@@ -32,6 +32,7 @@ partial class Form1
         AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new Size(800, 450);
         Text = "Form1";
+        Icon = ImageLoader.loadIcon("app.ico");
 
         IconButton backButton = new IconButton(){
             Icon = ImageLoader.loadImage("arrow_left.svg"),

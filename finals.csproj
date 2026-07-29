@@ -7,6 +7,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>assets/app.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
       <EmbeddedResource Include="assets/accessibility_color.svg" />
@@ -26,6 +27,7 @@
       <EmbeddedResource Include="assets/shield_color.svg" />
       <EmbeddedResource Include="assets/storage.svg" />
       <EmbeddedResource Include="assets/wifi_color.svg" />
+      <EmbeddedResource Include="assets/app.ico" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Svg" Version="3.4.8" />

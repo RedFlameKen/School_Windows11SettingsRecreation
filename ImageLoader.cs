@@ -30,6 +30,21 @@ class ImageLoader
         }
     }
 
+    public static Icon loadIcon(string filePath){
+        Assembly asm = Assembly.GetExecutingAssembly();
+
+        Stream? stream = asm.GetManifestResourceStream(
+                $"finals.assets.{filePath}"
+                );
+
+        if (stream is null)
+            throw new Exception("Resource not found");
+
+        using(stream) {
+            return new Icon(stream);
+        }
+    }
+
     public static string getFileExtension(string filePath){
 
         int length = filePath.Length;
