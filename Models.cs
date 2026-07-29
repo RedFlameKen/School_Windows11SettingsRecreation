@@ -13,7 +13,9 @@ interface SettingComponent {
 
 class ButtonDetails {
 
+    public string id {get; set;} = "";
     public string title {get; set;} = "";
+    public string? subtitle {get; set;} = null;
     public string icon {get; set;} = "";
     public bool hasToggle {get; set;} = false;
     public bool toggleState {get; set;} = false;
@@ -22,6 +24,7 @@ class ButtonDetails {
 
 class DeviceDetails {
 
+    public string id {get; set;} = "";
     public string name {get; set;} = "";
     public bool isConnected {get; set;} = false;
     public string icon {get; set;} = "";
@@ -31,6 +34,7 @@ class DeviceDetails {
 class ButtonListDetails : SettingComponent
 {
 
+    public string id {get; set;} = "";
     public List<ButtonDetails>? buttons {get; set;}
 
     public SettingComponentType getType()
@@ -43,6 +47,7 @@ class ButtonListDetails : SettingComponent
 class SectionDetails : SettingComponent
 {
 
+    public string id {get; set;} = "";
     public string title {get; set;} = "";
     public string subtitle {get; set;} = "";
     public List<ButtonDetails>? buttons {get; set;}
@@ -57,6 +62,7 @@ class SectionDetails : SettingComponent
 class DevicesSectionDetails : SettingComponent
 {
 
+    public string id {get;set;} = "";
     public string title {get; set;} = "";
     public string subtitle {get; set;} = "";
     public bool bluetoothOn {get; set;} = true;
@@ -72,6 +78,7 @@ class DevicesSectionDetails : SettingComponent
 class NavMenuDetails
 {
 
+    public string id {get; set;} = "";
     public string? icon {get; set;}
     public string name {get; set;} = "Nav";
     public List<SettingComponent>? items {get; set;}

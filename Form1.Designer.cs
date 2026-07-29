@@ -78,16 +78,35 @@ partial class Form1
         };
 
         Label languageLabel = new Label(){
-            Text = "Language",
+            Text = ResourceManager.getString("languageText"),
+            Dock = DockStyle.Left
         };
 
         languageBox = new ComboBox(){
+            Dock = DockStyle.Fill,
         };
 
+
         languageBox.Items.AddRange(new object[] {
-            "English",
-            "Filipino"
+            ResourceManager.getString("englishLang"),
+            ResourceManager.getString("filipinoLang"),
         });
+
+        languageBox.TextChanged += (_, _) => {
+            switch (languageBox.SelectedIndex)
+            {
+                case 1:
+                    changeLanguage("fil-PH");
+                    break;
+                default:
+                case 0:
+                    changeLanguage("en");
+                    break;
+            }
+        };
+
+        topBarRight.Controls.Add(languageLabel);
+        topBarRight.Controls.Add(languageBox);
 
 
         topBar = new Panel() {

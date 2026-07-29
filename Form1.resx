@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value>
+  </resheader>
+
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value>
+  </resheader>
+
+  <data name="home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+
+  <data name="languageText" xml:space="preserve">
+    <value>Language</value>
+  </data>
+
+  <data name="englishLang" xml:space="preserve">
+    <value>English</value>
+  </data>
+
+  <data name="filipinoLang" xml:space="preserve">
+    <value>Filipino</value>
+  </data>
+
+  <data name="system" xml:space="preserve">
+    <value>System</value>
+  </data>
+
+  <data name="network_and_internet" xml:space="preserve">
+    <value>Network &amp;&amp; Internet</value>
+  </data>
+
+  <data name="personalization" xml:space="preserve">
+    <value>Personalization</value>
+  </data>
+
+  <data name="apps" xml:space="preserve">
+    <value>Apps</value>
+  </data>
+
+  <data name="accounts" xml:space="preserve">
+    <value>Accounts</value>
+  </data>
+
+  <data name="accessibility" xml:space="preserve">
+    <value>Accessibility</value>
+  </data>
+
+  <data name="privacy_and_security" xml:space="preserve">
+    <value>Privacy &amp;&amp; Security</value>
+  </data>
+
+  <data name="connected" xml:space="preserve">
+    <value>Connected</value>
+  </data>
+
+  <data name="not_connected" xml:space="preserve">
+    <value>Not connected</value>
+  </data>
+
+  <data name="home.recommended.title" xml:space="preserve">
+    <value>Recommended Settings</value>
+  </data>
+
+  <data name="home.recommended.subtitle" xml:space="preserve">
+    <value>Recent and commonly used settings</value>
+  </data>
+
+  <data name="storage" xml:space="preserve">
+    <value>Storage</value>
+  </data>
+
+  <data name="default_apps" xml:space="preserve">
+    <value>Default Apps</value>
+  </data>
+
+  <data name="search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+
+  <data name="home.devices.title" xml:space="preserve">
+    <value>Bluetooth Devices</value>
+  </data>
+
+  <data name="home.devices.subtitle" xml:space="preserve">
+    <value>Manage, add, and remove devices</value>
+  </data>
+
+  <data name="system.display.title" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="system.display.subtitle" xml:space="preserve">
+    <value>Monitors, brightness, night light, display profile</value>
+  </data>
+
+  <data name="system.sound.title" xml:space="preserve">
+    <value>Sound</value>
+  </data>
+  <data name="system.sound.subtitle" xml:space="preserve">
+    <value>Volume levels, output, input, sound devices</value>
+  </data>
+
+  <data name="system.notifications.title" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="system.notifications.subtitle" xml:space="preserve">
+    <value>Alerts from apps and systems, do not disturb</value>
+  </data>
+
+  <data name="system.focus.title" xml:space="preserve">
+    <value>Focus</value>
+  </data>
+  <data name="system.focus.subtitle" xml:space="preserve">
+    <value>Reduce distractions</value>
+  </data>
+
+  <data name="system.power_and_battery.title" xml:space="preserve">
+    <value>Power &amp;&amp; Battery</value>
+  </data>
+  <data name="system.power_and_battery.subtitle" xml:space="preserve">
+    <value>Screen and sleep, battery usage, power mode, energy saver</value>
+  </data>
+
+  <data name="system.storage.title" xml:space="preserve">
+    <value>Storage</value>
+  </data>
+  <data name="system.storage.subtitle" xml:space="preserve">
+    <value>Storage space, drives, configuration rules</value>
+  </data>
+
+  <data name="system.nearby_sharing.title" xml:space="preserve">
+    <value>Nearby sharing</value>
+  </data>
+  <data name="system.nearby_sharing.subtitle" xml:space="preserve">
+    <value>Discoverability, received files location</value>
+  </data>
+
+  <data name="system.multitasking.title" xml:space="preserve">
+    <value>Multitasking</value>
+  </data>
+  <data name="system.multitasking.subtitle" xml:space="preserve">
+    <value>Snap windows, desktops, task switching</value>
+  </data>
+
+  <data name="system.advanced.title" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="system.advanced.subtitle" xml:space="preserve">
+    <value>Performance, optimization, and developer features</value>
+  </data>
+
+  <data name="system.activation.title" xml:space="preserve">
+    <value>Activation</value>
+  </data>
+  <data name="system.activation.subtitle" xml:space="preserve">
+    <value>Activation state, subscription, product key</value>
+  </data>
+
+  <data name="system.troubleshooting.title" xml:space="preserve">
+    <value>Troubleshooting</value>
+  </data>
+  <data name="system.troubleshooting.subtitle" xml:space="preserve">
+    <value>Recommended troubleshooters, preferences, history</value>
+  </data>
+
+  <data name="system.recovery.title" xml:space="preserve">
+    <value>Recovery</value>
+  </data>
+  <data name="system.recovery.subtitle" xml:space="preserve">
+    <value>Reset, advanced startup, go back</value>
+  </data>
+
+  <data name="system.projecting_to_this_pc.title" xml:space="preserve">
+    <value>Projecting to this PC</value>
+  </data>
+  <data name="system.projecting_to_this_pc.subtitle" xml:space="preserve">
+    <value>Permissions, pairing PIN, discoverability</value>
+  </data>
+
+  <data name="system.remote_desktop.title" xml:space="preserve">
+    <value>Remote Desktop</value>
+  </data>
+  <data name="system.remote_desktop.subtitle" xml:space="preserve">
+    <value>Remote Desktop users, connection permissions</value>
+  </data>
+
+  <data name="system.clipboard.title" xml:space="preserve">
+    <value>Clipboard</value>
+  </data>
+  <data name="system.clipboard.subtitle" xml:space="preserve">
+    <value>Cut and copy history, sync, clear</value>
+  </data>
+
+  <data name="system.system_components.title" xml:space="preserve">
+    <value>System Components</value>
+  </data>
+  <data name="system.system_components.subtitle" xml:space="preserve">
+    <value>Manage system components that are preinstalled on Windows</value>
+  </data>
+
+  <data name="system.ai_components.title" xml:space="preserve">
+    <value>AI components</value>
+  </data>
+  <data name="system.ai_components.subtitle" xml:space="preserve">
+    <value>View AI components that are installed on your PC</value>
+  </data>
+
+  <data name="system.optional_features.title" xml:space="preserve">
+    <value>Optional features</value>
+  </data>
+  <data name="system.optional_features.subtitle" xml:space="preserve">
+    <value>Extra functionality for your device</value>
+  </data>
+
+  <data name="system.about.title" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="system.about.subtitle" xml:space="preserve">
+    <value>Device specifications, rename PC, Windows specifications</value>
+  </data>
+
+  <data name="network_and_internet.wifi.title" xml:space="preserve">
+    <value>WI-FI</value>
+  </data>
+  <data name="network_and_internet.wifi.subtitle" xml:space="preserve">
+    <value>Connect, manage known networks, metered network</value>
+  </data>
+
+</root>

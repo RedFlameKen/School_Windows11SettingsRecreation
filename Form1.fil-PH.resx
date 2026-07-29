@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+<xsd:sequence>
+<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+</xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, resgen, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, resgen, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value></resheader>
+
+
+  <data name="languageText" xml:space="preserve">
+    <value>Wika</value>
+  </data>
+
+  <data name="englishLang" xml:space="preserve">
+    <value>Ingles</value>
+  </data>
+
+  <data name="filipinoLang" xml:space="preserve">
+    <value>Filipino</value>
+  </data>
+
+  <data name="home"><value>Bahay</value></data>
+
+  <data name="system" xml:space="preserve">
+    <value>Sistema</value>
+  </data>
+
+  <data name="network_and_internet" xml:space="preserve">
+        <value>Network at Internet</value>
+  </data>
+
+  <data name="personalization" xml:space="preserve">
+      <value>Personalisasyon</value>
+  </data>
+
+  <data name="apps" xml:space="preserve">
+      <value>Apps</value>
+  </data>
+
+  <data name="accounts" xml:space="preserve">
+      <value>Mga Account</value>
+  </data>
+
+  <data name="accessibility" xml:space="preserve">
+      <value>Accessibility</value>
+  </data>
+
+  <data name="privacy_and_security" xml:space="preserve">
+      <value>Privacy at Security</value>
+  </data>
+
+  <data name="connected" xml:space="preserve">
+    <value>Konektado</value>
+  </data>
+
+  <data name="not_connected" xml:space="preserve">
+    <value>Hindi konektado</value>
+  </data>
+
+  <data name="home.recommended.title" xml:space="preserve">
+    <value>Mga Inirerekomendang Setting</value>
+  </data>
+
+  <data name="home.recommended.subtitle" xml:space="preserve">
+    <value>Kamakailan at karaniwang ginagamit na mga setting</value>
+  </data>
+
+  <data name="storage" xml:space="preserve">
+    <value>Imbakan</value>
+  </data>
+
+  <data name="default_apps" xml:space="preserve">
+    <value>Mga Default na App</value>
+  </data>
+
+  <data name="search" xml:space="preserve">
+    <value>Paghahanap</value>
+  </data>
+
+  <data name="home.devices.title" xml:space="preserve">
+    <value>Mga Bluetooth Device</value>
+  </data>
+
+  <data name="home.devices.subtitle" xml:space="preserve">
+      <value>Pamahalaan, magdagdag, at alisin ang mga device</value>
+  </data>
+
+  <data name="system.display.title" xml:space="preserve">
+<value>Ipakita</value>
+  </data>
+  <data name="system.display.subtitle" xml:space="preserve">
+<value>Mga monitor, liwanag, ilaw sa gabi, display profile</value>
+  </data>
+
+  <data name="system.sound.title" xml:space="preserve">
+<value>Tunog</value>
+  </data>
+  <data name="system.sound.subtitle" xml:space="preserve">
+<value>Mga antas ng volume, output, input, sound device</value>
+  </data>
+
+  <data name="system.notifications.title" xml:space="preserve">
+<value>Mga Notification</value>
+  </data>
+  <data name="system.notifications.subtitle" xml:space="preserve">
+<value>Mga alerto mula sa mga app at system, huwag istorbohin</value>
+  </data>
+
+  <data name="system.focus.title" xml:space="preserve">
+<value>Focus</value>
+  </data>
+  <data name="system.focus.subtitle" xml:space="preserve">
+<value>Bawasan ang mga distractions</value>
+  </data>
+
+  <data name="system.power_and_battery.title" xml:space="preserve">
+<value>Power at Baterya</value>
+  </data>
+  <data name="system.power_and_battery.subtitle" xml:space="preserve">
+<value>Screen at sleep, paggamit ng baterya, power mode, energy saver</value>
+  </data>
+
+  <data name="system.storage.title" xml:space="preserve">
+<value>Imbakan</value>
+  </data>
+  <data name="system.storage.subtitle" xml:space="preserve">
+<value>Space ng storage, mga drive, mga panuntunan sa configuration</value>
+  </data>
+
+  <data name="system.nearby_sharing.title" xml:space="preserve">
+<value>Kalapit na pagbabahagi</value>
+  </data>
+  <data name="system.nearby_sharing.subtitle" xml:space="preserve">
+<value>Discoverability, natanggap na lokasyon ng mga file</value>
+  </data>
+
+  <data name="system.multitasking.title" xml:space="preserve">
+<value>Multitasking</value>
+  </data>
+  <data name="system.multitasking.subtitle" xml:space="preserve">
+<value>Mga snap window, desktop, paglipat ng gawain</value>
+  </data>
+
+  <data name="system.advanced.title" xml:space="preserve">
+<value>Advanced</value>
+  </data>
+  <data name="system.advanced.subtitle" xml:space="preserve">
+<value>Pagganap, pag-optimize, at mga tampok ng developer</value>
+  </data>
+
+  <data name="system.activation.title" xml:space="preserve">
+<value>Pag-activate</value>
+  </data>
+  <data name="system.activation.subtitle" xml:space="preserve">
+<value>Status ng activation, subscription, product key</value>
+  </data>
+
+  <data name="system.troubleshooting.title" xml:space="preserve">
+<value>Pag-troubleshoot</value>
+  </data>
+  <data name="system.troubleshooting.subtitle" xml:space="preserve">
+<value>Mga inirerekomendang troubleshooter, kagustuhan, kasaysayan</value>
+  </data>
+
+  <data name="system.recovery.title" xml:space="preserve">
+<value>Pagbawi</value>
+  </data>
+  <data name="system.recovery.subtitle" xml:space="preserve">
+<value>I-reset, advanced na startup, bumalik</value>
+  </data>
+
+  <data name="system.projecting_to_this_pc.title" xml:space="preserve">
+<value>Pag-project sa PC na ito</value>
+  </data>
+  <data name="system.projecting_to_this_pc.subtitle" xml:space="preserve">
+<value>Mga pahintulot, pagpapares ng PIN, kakayahang matuklasan</value>
+  </data>
+
+  <data name="system.remote_desktop.title" xml:space="preserve">
+  <value>Remote Desktop</value>
+  </data>
+  <data name="system.remote_desktop.subtitle" xml:space="preserve">
+<value>Mga user ng Remote na Desktop, mga pahintulot sa koneksyon</value>
+  </data>
+
+  <data name="system.clipboard.title" xml:space="preserve">
+<value>Clipboard</value>
+  </data>
+  <data name="system.clipboard.subtitle" xml:space="preserve">
+<value>I-cut at kopyahin ang kasaysayan, i-sync, i-clear</value>
+  </data>
+
+  <data name="system.system_components.title" xml:space="preserve">
+<value>System Components</value>
+  </data>
+  <data name="system.system_components.subtitle" xml:space="preserve">
+<value>Pamahalaan ang mga bahagi ng system na paunang naka-install sa Windows</value>
+  </data>
+
+  <data name="system.ai_components.title" xml:space="preserve">
+  <value>mga bahagi ng AI</value>
+  </data>
+  <data name="system.ai_components.subtitle" xml:space="preserve">
+<value>Tingnan ang mga bahagi ng AI na naka-install sa iyong PC</value>
+  </data>
+
+  <data name="system.optional_features.title" xml:space="preserve">
+<value>Mga opsyonal na feature</value>
+  </data>
+  <data name="system.optional_features.subtitle" xml:space="preserve">
+<value>Karagdagang functionality para sa iyong device</value>
+  </data>
+
+  <data name="system.about.title" xml:space="preserve">
+  <value>Tungkol sa</value>
+  </data>
+  <data name="system.about.subtitle" xml:space="preserve">
+  <value>Mga detalye ng device, palitan ang pangalan ng PC, mga detalye ng Windows</value>
+  </data>
+
+  <data name="network_and_internet.wifi.title" xml:space="preserve">
+    <value>WI-FI</value>
+  </data>
+  <data name="network_and_internet.wifi.subtitle" xml:space="preserve">
+  <value>Kumonekta, pamahalaan ang mga kilalang network, metered network</value>
+  </data>
+
+</root>
+

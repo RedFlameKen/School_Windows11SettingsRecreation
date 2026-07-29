@@ -8,30 +8,28 @@ public partial class Form1 : Form
     private List<NavMenuDetails> nav_items
         = new List<NavMenuDetails>(){
         new NavMenuDetails() {
-            name = "Home",
+            id = "home",
             icon = "home_color.svg",
             items = new List<SettingComponent>(){
                 new SectionDetails(){
-                    title = "Recommended Settings",
-                    subtitle = "Recent and commonly used settings",
+                    id = "recommended",
                     buttons = new List<ButtonDetails>(){
                         new ButtonDetails(){
-                            title = "Storage",
+                            id = "storage",
                             icon = "storage.svg",
                         },
                         new ButtonDetails(){
-                            title = "Default Apps",
+                            id = "default_apps",
                             icon = "calendar_check.svg",
                         },
                         new ButtonDetails(){
-                            title = "Search",
+                            id="search",
                             icon = "search_square.svg",
                         }
                     }
                 },
                 new DevicesSectionDetails(){
-                    title = "Bluetooth Devices",
-                    subtitle = "Manage, add, and remove devices",
+                    id = "devices",
                     buttons = new List<DeviceDetails>(){
                         new DeviceDetails(){
                             name = "AirPods Pro",
@@ -50,35 +48,147 @@ public partial class Form1 : Form
             }
         },
         new NavMenuDetails() {
-            name = "System",
+            id = "system",
             icon = "laptop_color.svg",
+            items = new List<SettingComponent>(){
+                new ButtonListDetails(){
+                    buttons = new List<ButtonDetails>(){
+                        new ButtonDetails(){
+                            id = "display",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "sound",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "notifications",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "focus",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "power_and_battery",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "storage",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "nearby_sharing",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "multitasking",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "advanced",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "activation",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "troubleshooting",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "recovery",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "projecting_to_this_pc",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "remote_desktop",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "clipboard",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "system_components",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "ai_components",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "optional_features",
+                            icon = "storage.svg",
+                        },
+
+                        new ButtonDetails(){
+                            id = "about",
+                            icon = "storage.svg",
+                        },
+
+                    }
+                }
+            }
         },
         new NavMenuDetails() {
-            name = "Network && internet",
+            id = "network_and_internet",
             icon = "wifi_color.svg",
+            items = new List<SettingComponent>(){
+            }
         },
         new NavMenuDetails() {
-            name = "Personalization",
+            id = "personalization",
             icon = "brush_color.svg",
+            items = new List<SettingComponent>(){
+            }
         },
         new NavMenuDetails() {
-            name = "Apps",
+            id = "apps",
             icon = "apps_color.svg",
+            items = new List<SettingComponent>(){
+            }
         },
         new NavMenuDetails() {
-            name = "Accounts",
+            id = "accounts",
             icon = "person_color.svg",
+            items = new List<SettingComponent>(){
+            }
         },
         new NavMenuDetails() {
-            name = "Accessibility",
+            id = "accessibility",
             icon = "accessibility_color.svg",
+            items = new List<SettingComponent>(){
+            }
         },
         new NavMenuDetails() {
-            name = "Privacy && Security",
+            id = "privacy_and_security",
             icon = "shield_color.svg",
+            items = new List<SettingComponent>(){
+            }
         },
     };
-
 
 
     public Form1()
@@ -97,4 +207,11 @@ public partial class Form1 : Form
         mainPanel.Controls.Add(settingMenu);
 
     }
+
+    private void changeLanguage(string langCode){
+        Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(langCode);
+        this.Controls.Clear();
+        InitializeComponent();
+    }
+
 }
