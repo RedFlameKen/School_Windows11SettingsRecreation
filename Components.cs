@@ -949,7 +949,7 @@ class RouteButtonSubtitled : FocusableControl {
 
         wrap.ColumnStyles.Clear();
         wrap.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
-        wrap.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+        wrap.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100f));
         wrap.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
 
         pictureBox = new PictureBox() {
@@ -957,22 +957,29 @@ class RouteButtonSubtitled : FocusableControl {
             Anchor = (AnchorStyles.Left),
         };
 
-        var titlePanel = new FlowLayoutPanel(){
+        var titlePanel = new TableLayoutPanel(){
             AutoSize = true,
-            Anchor = (AnchorStyles.Left),
-            FlowDirection = FlowDirection.TopDown,
-            WrapContents = false,
+            Dock = DockStyle.Fill,
+            ColumnCount = 1,
+            RowCount = 2,
+            // Anchor = (AnchorStyles.Left | AnchorStyles.Right),
         };
+
+        titlePanel.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+        titlePanel.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+        titlePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100f));
 
         titleLabel = new Label() {
             Font = new Font("Segoe UI Variable", 11, FontStyle.Bold),
             AutoSize = true,
-            Anchor = (AnchorStyles.Left),
+            Anchor = (AnchorStyles.Left | AnchorStyles.Right),
         };
 
         subtitleLabel = new Label(){
             Font = new Font("Segoe UI Variable", 11),
-            AutoSize = true,
+            // AutoSize = false,
+            AutoEllipsis = true,
+            Anchor = (AnchorStyles.Left | AnchorStyles.Right),
         };
 
         titlePanel.Controls.Add(titleLabel);
