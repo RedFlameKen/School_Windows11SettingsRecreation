@@ -2,6 +2,17 @@ namespace finals;
 
 using System.ComponentModel;
 
+static class Theme {
+    public static readonly Color BG_COLOR = Color.FromArgb(0xFF, 0xFF, 0xFF);
+    public static readonly Color BG2_COLOR = Color.FromArgb(0xEF, 0xF4, 0xF9);      // #EFF4F9
+    public static readonly Color ACTIVE_COLOR = Color.FromArgb(0xE3, 0xE8, 0xEC);   // #E3E8EC
+    public static readonly Color HOVER_COLOR = Color.FromArgb(0xF4, 0xF8, 0xFB);    // #F4F8FB
+    public static readonly Color ACCENT_COLOR = Color.FromArgb(0x0B, 0x71, 0xC1);   // #0B71C1
+    public static readonly Color FORE_MAIN_COLOR = Color.FromArgb(0x19, 0x1A, 0x1A);// #191A1A
+    public static readonly Color FORE_SUB_COLOR = Color.FromArgb(0x9D, 0x9E, 0x9F);// #9D9E9F
+}
+
+
 class FocusableControl : UserControl {
 
     protected bool focusable;
@@ -18,17 +29,26 @@ class FocusableControl : UserControl {
     [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
     public Action actionEvent {get; set;}
 
-    [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-    public Color backColor {get; set;} = Color.Transparent;
+    protected Color _backColor = Color.Transparent;
 
     [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-    public Color hoverColor {get; set;} = Color.White;
+    public Color backColor {
+        get => _backColor; 
+        set {
+            BackColor = value;
+            _backColor = value;
+        }
+    }
 
     [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-    public Color activeColor {get; set;} = Color.DimGray;
+    public Color hoverColor {get; set;} = Theme.HOVER_COLOR;
+
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+    public Color activeColor {get; set;} = Theme.ACTIVE_COLOR;
 
     public FocusableControl(bool focusable=true){
         this.focusable=focusable;
+        BackColor = backColor;
         SetStyle(ControlStyles.Selectable, focusable);
         TabStop = focusable;
 
@@ -180,7 +200,7 @@ public class SearchBar : UserControl
 
     public SearchBar()
     {
-        BackColor = Color.White;
+        BackColor = Theme.BG_COLOR;
         BorderStyle = BorderStyle.FixedSingle;
         AutoSize = true;
         Margin = new Padding(3);
@@ -207,7 +227,7 @@ public class SearchBar : UserControl
         input = new TextBox() {
             PlaceholderText = "Find a setting",
             Dock = DockStyle.Bottom,
-            // BackColor = Color.Transparent,
+            BackColor = Theme.BG_COLOR,
             BorderStyle = BorderStyle.None,
             TextAlign = HorizontalAlignment.Left,
         };
@@ -314,8 +334,8 @@ class NavButton : FocusableControl {
     public bool IsActive {
         get => _isActive;
         set {
-            focusBar.HighlightColor = value ? Color.DodgerBlue : Color.Transparent;
-            row.BackColor = value ? Color.DimGray : Color.Transparent;
+            focusBar.HighlightColor = value ? Theme.ACCENT_COLOR : Color.Transparent;
+            row.BackColor = value ? Theme.ACTIVE_COLOR : Color.Transparent;
             _isActive = value;
         }
     }
@@ -474,6 +494,7 @@ class ImageButton : FocusableControl
             Font = new Font("Segoe UI Variable", 11),
             AutoSize = true,
             Anchor = (AnchorStyles.Left),
+            ForeColor = Theme.FORE_MAIN_COLOR,
         };
 
         wrap.Controls.Add(pictureBox);
@@ -518,7 +539,7 @@ class SectionPanel : UserControl {
     public SectionPanel(List<ButtonDetails>? buttons){
         int buttonCount = (buttons == null ? 0 : buttons.Count());
         Margin = new Padding(10);
-        BackColor = Color.White;
+        BackColor = Theme.BG_COLOR;
         AutoSize = true;
 
         var headerPanel = new FlowLayoutPanel(){
@@ -538,11 +559,13 @@ class SectionPanel : UserControl {
             AutoSize = true,
             Anchor = (AnchorStyles.Left | AnchorStyles.Right),
             TextAlign = ContentAlignment.MiddleLeft,
+            ForeColor = Theme.FORE_MAIN_COLOR,
         };
 
         subtitleLabel = new Label(){
             Font = new Font("Segoe UI Variable", 11),
             AutoSize = true,
+            ForeColor = Theme.FORE_SUB_COLOR,
             Anchor = (AnchorStyles.Left | AnchorStyles.Right),
             TextAlign = ContentAlignment.MiddleLeft,
         };
@@ -624,7 +647,7 @@ class DevicesPanel : UserControl {
     public DevicesPanel(List<DeviceDetails>? buttons){
         int buttonCount = 2 + (buttons == null ? 0 : buttons.Count());
         Margin = new Padding(10);
-        BackColor = Color.White;
+        BackColor = Theme.BG_COLOR;
         AutoSize = true;
 
         var headerPanel = new FlowLayoutPanel(){
@@ -644,6 +667,7 @@ class DevicesPanel : UserControl {
             AutoSize = true,
             Anchor = (AnchorStyles.Left | AnchorStyles.Right),
             TextAlign = ContentAlignment.MiddleLeft,
+            ForeColor = Theme.FORE_MAIN_COLOR,
         };
 
         subtitleLabel = new Label(){
@@ -651,6 +675,7 @@ class DevicesPanel : UserControl {
             AutoSize = true,
             Anchor = (AnchorStyles.Left | AnchorStyles.Right),
             TextAlign = ContentAlignment.MiddleLeft,
+            ForeColor = Theme.FORE_SUB_COLOR,
         };
 
         headerPanel.Controls.Add(titleLabel);
@@ -722,7 +747,7 @@ class TextButton : FocusableControl {
     }
 
     public TextButton(){
-        BackColor = Color.Transparent;
+        backColor = Theme.BG2_COLOR;
         AutoSize = true;
         AutoSizeMode = AutoSizeMode.GrowAndShrink;
         Padding = new Padding(2);
@@ -730,6 +755,7 @@ class TextButton : FocusableControl {
         label = new Label(){
             AutoSize = true,
             Dock = DockStyle.Fill,
+            ForeColor = Theme.FORE_MAIN_COLOR,
         };
 
         forwardFocus(label);
@@ -801,6 +827,7 @@ class DeviceRow : UserControl {
         nameLabel = new Label() {
             Font = new Font("Segoe UI Variable", 11, FontStyle.Bold),
             AutoSize = true,
+            ForeColor = Theme.FORE_MAIN_COLOR,
         };
 
         connectedLabel = new Label(){
@@ -810,6 +837,7 @@ class DeviceRow : UserControl {
                 ResourceManager.getString("not_connected")
             ),
             AutoSize = true,
+            ForeColor = Theme.FORE_SUB_COLOR,
         };
 
         namePanel.Controls.Add(nameLabel);
@@ -888,6 +916,7 @@ class RouteButton : FocusableControl {
             Font = new Font("Segoe UI Variable", 11),
             AutoSize = true,
             Anchor = (AnchorStyles.Left),
+            ForeColor = Theme.FORE_MAIN_COLOR,
         };
 
         chevronBox = new PictureBox() {
@@ -958,8 +987,6 @@ class RouteButtonSubtitled : FocusableControl {
             AutoSize = true,
             AutoSizeMode = AutoSizeMode.GrowAndShrink
         };
-        BackColor = Color.Transparent;
-        Cursor = Cursors.Hand;
 
         wrap.ColumnStyles.Clear();
         wrap.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
@@ -987,6 +1014,7 @@ class RouteButtonSubtitled : FocusableControl {
             Font = new Font("Segoe UI Variable", 11, FontStyle.Bold),
             AutoSize = true,
             Anchor = (AnchorStyles.Left | AnchorStyles.Right),
+            ForeColor = Theme.FORE_MAIN_COLOR,
         };
 
         subtitleLabel = new Label(){
@@ -994,6 +1022,7 @@ class RouteButtonSubtitled : FocusableControl {
             // AutoSize = false,
             AutoEllipsis = true,
             Anchor = (AnchorStyles.Left | AnchorStyles.Right),
+            ForeColor = Theme.FORE_SUB_COLOR,
         };
 
         titlePanel.Controls.Add(titleLabel);
@@ -1047,6 +1076,7 @@ class ButtonListPanel : UserControl {
                 AutoSize = true,
                 Anchor = AnchorStyles.Left,
                 Text = ResourceManager.getString($"{parentId}.{details.id}"),
+                ForeColor = Theme.FORE_MAIN_COLOR,
             };
 
             column.Controls.Add(titleLabel);
@@ -1067,6 +1097,7 @@ class ButtonListPanel : UserControl {
                                 $"{parentId}.{details.id}.{details.buttons[pos].id}.subtitle"
                                 ),
                         Dock = DockStyle.Fill,
+                        backColor = Theme.BG_COLOR,
                     };
 
                     column.Controls.Add(subbedRb);
@@ -1078,6 +1109,7 @@ class ButtonListPanel : UserControl {
                             $"{parentId}.{details.id}.{details.buttons[pos].id}.title"
                             ),
                     Dock = DockStyle.Fill,
+                    backColor = Theme.BG_COLOR,
                 };
 
                 column.Controls.Add(routeButton);
@@ -1106,6 +1138,7 @@ class SettingMenu : UserControl
             Text = ResourceManager.getString(details.id),
             Font = new Font("Segoe UI Variable", 18),
             AutoSize = true,
+            ForeColor = Theme.FORE_MAIN_COLOR,
         };
 
         compColumn = new TableLayoutPanel(){
@@ -1185,7 +1218,7 @@ class HomepageButton : Panel
 
     public HomepageButton(Image icon, string mainText, string descriptionText){
         // Size = new Size(340, 90);
-        BackColor = Color.White;
+        BackColor = Theme.BG2_COLOR;
         Cursor = Cursors.Hand;
 
         PictureBox pictureBox = new PictureBox() {
@@ -1199,13 +1232,14 @@ class HomepageButton : Panel
             Text = mainText,
             Font = new Font("Segoe UI Variable", 12, FontStyle.Bold),
             Location = new Point(72, 16),
-            AutoSize = true
+            AutoSize = true,
+            ForeColor = Theme.FORE_MAIN_COLOR,
         };
 
         descriptionLabel = new Label() {
             Text = descriptionText,
             Font = new Font("Segoe UI Variable", 9),
-            ForeColor = Color.Gray,
+            ForeColor = Theme.FORE_SUB_COLOR,
             MaximumSize = new Size(240, 0),
             AutoSize = true,
             Location = new Point(72, 42),
