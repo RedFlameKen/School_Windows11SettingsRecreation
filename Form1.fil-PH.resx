@@ -55,8 +55,40 @@
     <value>Sistema</value>
   </data>
 
+  <data name="system.subtitle" xml:space="preserve">
+<value>Display, tunog, mga notification, kapangyarihan</value>
+  </data>
+
+  <data name="network_and_internet.subtitle" xml:space="preserve">
+<value>WiFi, airplane mode, VPN</value>
+  </data>
+
+  <data name="personalization.subtitle" xml:space="preserve">
+<value>Background, lock screen, mga kulay</value>
+  </data>
+
+  <data name="apps.subtitle" xml:space="preserve">
+<value>I-uninstall, mga default, startup</value>
+  </data>
+
+  <data name="accounts.subtitle" xml:space="preserve">
+<value>Ang iyong impormasyon, iyong mga account, mga opsyon sa pag-sign in, pamilya</value>
+  </data>
+
+  <data name="time_and_language.subtitle" xml:space="preserve">
+<value>Oras at petsa, pagsasalita, rehiyon</value>
+  </data>
+
+  <data name="accessibility.subtitle" xml:space="preserve">
+<value>Laki ng text, visual effect, magnifier</value>
+  </data>
+
+  <data name="privacy_and_security.subtitle" xml:space="preserve">
+<value>Lokasyon, camera, mikropono</value>
+  </data>
+
   <data name="network_and_internet" xml:space="preserve">
-        <value>Network at Internet</value>
+      <value>Network at Internet</value>
   </data>
 
   <data name="personalization" xml:space="preserve">

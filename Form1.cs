@@ -12,40 +12,42 @@ public partial class Form1 : Form
             id = "home",
             icon = "home_color.png",
             items = new List<SettingComponent>(){
-                new SectionDetails(){
-                    id = "recommended",
-                    buttons = new List<ButtonDetails>(){
-                        new ButtonDetails(){
-                            id = "storage",
-                            icon = "storage.png",
-                        },
-                        new ButtonDetails(){
-                            id = "default_apps",
-                            icon = "calendar_check.png",
-                        },
-                        new ButtonDetails(){
-                            id="search",
-                            icon = "search_square.png",
-                        }
-                    }
-                },
-                new DevicesSectionDetails(){
-                    id = "devices",
-                    buttons = new List<DeviceDetails>(){
-                        new DeviceDetails(){
-                            name = "AirPods Pro",
-                            icon = "headset.png",
-                        },
-                        new DeviceDetails(){
-                            name = "GamePadPlus V3",
-                            icon = "controller.png",
-                        },
-                        new DeviceDetails(){
-                            name = "soundcore R50i",
-                            icon = "headset.png",
-                        }
-                    }
+                new DashboardDetails(){
                 }
+                // new SectionDetails(){
+                //     id = "recommended",
+                //     buttons = new List<ButtonDetails>(){
+                //         new ButtonDetails(){
+                //             id = "storage",
+                //             icon = "storage.png",
+                //         },
+                //         new ButtonDetails(){
+                //             id = "default_apps",
+                //             icon = "calendar_check.png",
+                //         },
+                //         new ButtonDetails(){
+                //             id="search",
+                //             icon = "search_square.png",
+                //         }
+                //     }
+                // },
+                // new DevicesSectionDetails(){
+                //     id = "devices",
+                //     buttons = new List<DeviceDetails>(){
+                //         new DeviceDetails(){
+                //             name = "AirPods Pro",
+                //             icon = "headset.png",
+                //         },
+                //         new DeviceDetails(){
+                //             name = "GamePadPlus V3",
+                //             icon = "controller.png",
+                //         },
+                //         new DeviceDetails(){
+                //             name = "soundcore R50i",
+                //             icon = "headset.png",
+                //         }
+                //     }
+                // }
             }
         },
         new NavMenuDetails() {
@@ -673,9 +675,19 @@ public partial class Form1 : Form
 
     private void setSettingMenu(int item){
         mainPanel.Controls.Clear();
-        SettingMenu settingMenu = new SettingMenu(nav_items[item]){
-            Dock = DockStyle.Top,
-            AutoSize = true,
+        DockStyle dock = DockStyle.Top;
+        bool autoSize = true;
+        if (item == 0) {
+            mainPanel.AutoScroll = false;
+            autoSize = false;
+            dock = DockStyle.Fill;
+        } else
+            mainPanel.AutoScroll = false;
+
+        SettingMenu settingMenu = new SettingMenu(nav_items, item, navBar){
+            Dock = dock,
+            AutoSize = autoSize,
+
         };
 
         mainPanel.Controls.Add(settingMenu);
@@ -688,6 +700,11 @@ public partial class Form1 : Form
         Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(langCode);
         this.Controls.Clear();
         InitializeComponentSelfManaged();
+    }
+
+    private void navChanged(int item){
+        // Console.WriteLine($"changed to {item}");
+        setSettingMenu(item);
     }
 
 }

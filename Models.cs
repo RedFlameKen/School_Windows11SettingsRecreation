@@ -2,6 +2,7 @@ namespace finals;
 
 enum SettingComponentType
 {
+    DASHBOARD,
     BUTTON_LIST,
     SECTION,
     DEVICES_SECTION,
@@ -21,6 +22,16 @@ class ButtonDetails {
     public bool hasToggle {get; set;} = false;
     public bool toggleState {get; set;} = false;
 
+}
+
+class DashboardDetails : SettingComponent {
+
+    public string id {get; set;} = "";
+
+    public SettingComponentType getType()
+    {
+        return SettingComponentType.DASHBOARD;
+    }
 }
 
 class DeviceDetails {

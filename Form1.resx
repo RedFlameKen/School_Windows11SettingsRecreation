@@ -45,32 +45,64 @@
     <value>System</value>
   </data>
 
+  <data name="system.subtitle" xml:space="preserve">
+    <value>Display, sound, notifications, power</value>
+  </data>
+
   <data name="network_and_internet" xml:space="preserve">
     <value>Network &amp;&amp; Internet</value>
+  </data>
+
+  <data name="network_and_internet.subtitle" xml:space="preserve">
+    <value>WiFi, airplane mode, VPN</value>
   </data>
 
   <data name="personalization" xml:space="preserve">
     <value>Personalization</value>
   </data>
 
+  <data name="personalization.subtitle" xml:space="preserve">
+    <value>Background, lock screen, colors</value>
+  </data>
+
   <data name="apps" xml:space="preserve">
     <value>Apps</value>
+  </data>
+
+  <data name="apps.subtitle" xml:space="preserve">
+    <value>Uninstall, defaults, startup</value>
   </data>
 
   <data name="accounts" xml:space="preserve">
     <value>Accounts</value>
   </data>
 
+  <data name="accounts.subtitle" xml:space="preserve">
+    <value>Your info, your accounts, sign-in options, family</value>
+  </data>
+
   <data name="time_and_language" xml:space="preserve">
     <value>Time &amp;&amp; language</value>
+  </data>
+
+  <data name="time_and_language.subtitle" xml:space="preserve">
+    <value>Time and date, speech, region</value>
   </data>
 
   <data name="accessibility" xml:space="preserve">
     <value>Accessibility</value>
   </data>
 
+  <data name="accessibility.subtitle" xml:space="preserve">
+    <value>Text size, visual effects, magnifier</value>
+  </data>
+
   <data name="privacy_and_security" xml:space="preserve">
     <value>Privacy &amp;&amp; Security</value>
+  </data>
+
+  <data name="privacy_and_security.subtitle" xml:space="preserve">
+    <value>Location, camera, microphone</value>
   </data>
 
   <data name="connected" xml:space="preserve">

@@ -514,6 +514,157 @@ class ImageButton : FocusableControl
 
 }
 
+class ImageButtonSubtitled : FocusableControl
+{
+
+    private Label titleLabel;
+    private Label subtitleLabel;
+    private PictureBox pictureBox;
+
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+    public Image? Icon {
+        get => pictureBox.Image;
+        set {
+            pictureBox.Image = value;
+        }
+    }
+
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+    public string Title {
+        get => titleLabel.Text;
+        set {
+            titleLabel.Text = value;
+        }
+    }
+
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+    public string Subtitle {
+        get => subtitleLabel.Text;
+        set {
+            subtitleLabel.Text = value;
+        }
+    }
+
+    public ImageButtonSubtitled(bool focusable=true) : base(focusable) {
+        AutoSize = true;
+        AutoSizeMode = AutoSizeMode.GrowAndShrink;
+        Padding = new Padding(2);
+
+        TableLayoutPanel wrap = new TableLayoutPanel(){
+            ColumnCount = 2,
+            Dock = DockStyle.Fill,
+            AutoSize = true,
+            AutoSizeMode = AutoSizeMode.GrowAndShrink
+        };
+
+        wrap.ColumnStyles.Clear();
+        wrap.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+        wrap.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+
+        pictureBox = new PictureBox() {
+            SizeMode = PictureBoxSizeMode.AutoSize,
+            Anchor = (AnchorStyles.Top | AnchorStyles.Left),
+        };
+
+        var textWrap = new TableLayoutPanel(){
+            RowCount = 2,
+            Dock = DockStyle.Fill,
+            // AutoSize = true,
+            // AutoSizeMode = AutoSizeMode.GrowAndShrink
+        };
+
+        textWrap.ColumnStyles.Clear();
+        textWrap.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+        textWrap.RowStyles.Clear();
+        textWrap.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+        textWrap.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+
+        titleLabel = new Label() {
+            Font = new Font("Segoe UI Variable", 11),
+            AutoSize = true,
+            Dock = DockStyle.Fill,
+            Anchor = (AnchorStyles.Left | AnchorStyles.Bottom),
+            ForeColor = Theme.FORE_MAIN_COLOR,
+        };
+
+        subtitleLabel = new Label() {
+            Font = new Font("Segoe UI Variable", 11),
+            // AutoSize = true,
+            // Anchor = (AnchorStyles.Left),
+            Dock = DockStyle.Fill,
+            ForeColor = Theme.FORE_SUB_COLOR,
+        };
+
+        textWrap.Controls.Add(titleLabel);
+        textWrap.Controls.Add(subtitleLabel);
+
+        wrap.Controls.Add(pictureBox);
+        wrap.Controls.Add(textWrap);
+
+        Controls.Add(wrap);
+
+        if (!focusable) {
+            return;
+        }
+
+        forwardFocus(wrap);
+        forwardFocus(pictureBox);
+        forwardFocus(titleLabel);
+
+    }
+
+}
+
+class Dashboard : UserControl {
+
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+    public Action<int>? onNavChange {get; set;}
+
+    public Dashboard(List<NavMenuDetails> navItems){
+        var wrap = new TableLayoutPanel(){
+            Dock = DockStyle.Fill,
+            ColumnCount = 3,
+            RowCount = 3
+        };
+
+        wrap.RowStyles.Clear();
+        wrap.ColumnStyles.Clear();
+
+        wrap.RowStyles.Add(new RowStyle(SizeType.Percent, 1f/3f));
+        wrap.RowStyles.Add(new RowStyle(SizeType.Percent, 1f/3f));
+        wrap.RowStyles.Add(new RowStyle(SizeType.Percent, 1f/3f));
+
+        wrap.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 1f/3f));
+        wrap.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 1f/3f));
+        wrap.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 1f/3f));
+
+        for (int i = 0; i < navItems.Count(); i++)
+        {
+            int pos = i;
+            var navItem = navItems[pos];
+            if (navItem.id == "home") {
+                continue;
+            }
+            var imageButton = new ImageButtonSubtitled(){
+                Title = ResourceManager.getString(navItem.id),
+                Subtitle = ResourceManager.getString($"{navItem.id}.subtitle"),
+                Icon = ImageLoader.loadImage(navItem.icon!),
+                AutoSize = true,
+                actionEvent = () => {
+                    Console.WriteLine($"clicky clicky bitch onNavChange is null: {onNavChange == null}");
+                    if (onNavChange != null)
+                        onNavChange(pos);
+                }
+            };
+
+            wrap.Controls.Add(imageButton);
+        }
+
+        Controls.Add(wrap);
+    }
+
+}
+
 class SectionPanel : UserControl {
 
     private Label titleLabel;
@@ -1126,12 +1277,23 @@ class SettingMenu : UserControl
     private Label nameLabel;
 
     private TableLayoutPanel compColumn;
-    private NavMenuDetails navDetails;
+    private NavMenuDetails details;
+    private List<NavMenuDetails> detailList;
+    private NavBar navBar;
 
-    public SettingMenu(NavMenuDetails details) {
-        this.navDetails = details;
+    public SettingMenu(List<NavMenuDetails> detailList, int item, NavBar navBar) {
+        this.navBar = navBar;
+        this.detailList = detailList;
+        this.details = detailList[item];
 
         int rowCount = 1 + (details.items == null ? 0 : details.items.Count());
+
+        DockStyle dock = DockStyle.Top;
+        bool autoSize = true;
+        if (item == 0) {
+            autoSize = false;
+            dock = DockStyle.Fill;
+        } 
 
 
         nameLabel = new Label(){
@@ -1144,8 +1306,8 @@ class SettingMenu : UserControl
         compColumn = new TableLayoutPanel(){
             RowCount = rowCount,
             ColumnCount = 1,
-            Dock = DockStyle.Top,
-            AutoSize = true,
+            Dock = dock,
+            AutoSize = autoSize,
         };
 
         compColumn.Controls.Add(nameLabel);
@@ -1169,6 +1331,8 @@ class SettingMenu : UserControl
                 return createDevicesSectionComponent(component as DevicesSectionDetails);
             case SettingComponentType.BUTTON_LIST:
                 return createButtonListComponent(component as ButtonListDetails);
+            case SettingComponentType.DASHBOARD:
+                return createDashboardComponent(component as DashboardDetails);
             default:
                 return new Panel(){
                     Dock = DockStyle.Fill,
@@ -1182,8 +1346,8 @@ class SettingMenu : UserControl
                 Dock = DockStyle.Fill,
             };
         return new SectionPanel(details.buttons){
-            Title = ResourceManager.getString($"{navDetails.id}.{details.id}.title"),
-            Subtitle = ResourceManager.getString($"{navDetails.id}.{details.id}.subtitle"),
+            Title = ResourceManager.getString($"{this.details.id}.{details.id}.title"),
+            Subtitle = ResourceManager.getString($"{this.details.id}.{details.id}.subtitle"),
             Dock = DockStyle.Fill,
         };
     }
@@ -1194,8 +1358,8 @@ class SettingMenu : UserControl
                 Dock = DockStyle.Fill,
             };
         return new DevicesPanel(details.buttons){
-            Title = ResourceManager.getString($"{navDetails.id}.{details.id}.title"),
-            Subtitle = ResourceManager.getString($"{navDetails.id}.{details.id}.subtitle"),
+            Title = ResourceManager.getString($"{this.details.id}.{details.id}.title"),
+            Subtitle = ResourceManager.getString($"{this.details.id}.{details.id}.subtitle"),
             Dock = DockStyle.Fill,
         };
     }
@@ -1205,54 +1369,23 @@ class SettingMenu : UserControl
             return new Panel(){
                 Dock = DockStyle.Fill,
             };
-        return new ButtonListPanel(details, navDetails.id){
+        return new ButtonListPanel(details, this.details.id){
             Dock = DockStyle.Fill,
         };
     }
-}
 
-class HomepageButton : Panel
-{
-    private Label mainLabel;
-    private Label descriptionLabel;
-
-    public HomepageButton(Image icon, string mainText, string descriptionText){
-        // Size = new Size(340, 90);
-        BackColor = Theme.BG2_COLOR;
-        Cursor = Cursors.Hand;
-
-        PictureBox pictureBox = new PictureBox() {
-            Image = icon,
-            SizeMode = PictureBoxSizeMode.Zoom,
-            Size = new Size(40, 40),
-            Location = new Point(16, 25),
+    private Control createDashboardComponent(DashboardDetails? details){
+        if (details == null) 
+            return new Panel(){
+                Dock = DockStyle.Fill,
+            };
+        return new Dashboard(detailList){
+            Dock = DockStyle.Fill,
+            onNavChange = (i) => {
+                navBar.ActiveItem = i;
+            },
         };
-
-        mainLabel = new Label() {
-            Text = mainText,
-            Font = new Font("Segoe UI Variable", 12, FontStyle.Bold),
-            Location = new Point(72, 16),
-            AutoSize = true,
-            ForeColor = Theme.FORE_MAIN_COLOR,
-        };
-
-        descriptionLabel = new Label() {
-            Text = descriptionText,
-            Font = new Font("Segoe UI Variable", 9),
-            ForeColor = Theme.FORE_SUB_COLOR,
-            MaximumSize = new Size(240, 0),
-            AutoSize = true,
-            Location = new Point(72, 42),
-        };
-
-        Controls.Add(pictureBox);
-        Controls.Add(mainLabel);
-        Controls.Add(descriptionLabel);
-
-        MouseEnter += (_, _) => BackColor = Color.FromArgb(0xFF, 0xF3, 0xF3, 0xF3);
-        MouseLeave += (_, _) => BackColor = Color.White;
     }
 
 }
-
 
