@@ -684,7 +684,7 @@ public partial class Form1 : Form
             autoSize = false;
             dock = DockStyle.Fill;
         } else
-            mainPanel.AutoScroll = false;
+            mainPanel.AutoScroll = true;
 
         SettingMenu settingMenu = new SettingMenu(nav_items, item, navBar, navStack){
             Dock = dock,
