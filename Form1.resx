@@ -17,6 +17,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value>
   </resheader>
 
+  <data name="setting_label" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+
+  <data name="search_placeholder" xml:space="preserve">
+    <value>Find a setting</value>
+  </data>
+
   <data name="home" xml:space="preserve">
     <value>Home</value>
   </data>

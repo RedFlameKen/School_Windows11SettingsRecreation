@@ -29,6 +29,13 @@
   </xsd:schema>
 <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, resgen, Version=4.0.0.0, Ctral PublicKeyToken=null</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, resgen, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value></resheader>
 
+  <data name="setting_label" xml:space="preserve">
+    <value>Mga setting</value>
+  </data>
+
+  <data name="search_placeholder" xml:space="preserve">
+<value>Maghanap ng setting</value>
+  </data>
 
   <data name="languageText" xml:space="preserve">
     <value>Wika</value>

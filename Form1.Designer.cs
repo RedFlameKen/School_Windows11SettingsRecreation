@@ -20,27 +20,14 @@ partial class Form1
         base.Dispose(disposing);
     }
 
-    #region Windows Form Designer generated code
-
-    /// <summary>
-    ///  Required method for Designer support - do not modify
-    ///  the contents of this method with the code editor.
-    /// </summary>
-    private void InitializeComponent()
-    {
-        components = new System.ComponentModel.Container();
-        AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(800, 450);
-        Text = "Form1";
-        Icon = ImageLoader.loadIcon("app.ico");
-
+    private void InitializeComponentSelfManaged(){
         IconButton backButton = new IconButton(){
             Icon = ImageLoader.loadImage("arrow_left.svg"),
             Anchor = AnchorStyles.None
         };
 
         Label windowTitle = new Label() {
-            Text = "Settings",
+            Text = ResourceManager.getString("setting_label"),
             Anchor = AnchorStyles.None
         };
 
@@ -98,17 +85,17 @@ partial class Form1
             ResourceManager.getString("filipinoLang"),
         });
 
-        languageBox.SelectedIndex = 0;
+        languageBox.SelectedIndex = curLang;
 
         languageBox.SelectedValueChanged += (_, _) => {
             switch (languageBox.SelectedIndex)
             {
                 case 1:
-                    changeLanguage("fil-PH");
+                    changeLanguage("fil-PH", 1);
                     break;
                 default:
                 case 0:
-                    changeLanguage("en");
+                    changeLanguage("en", 0);
                     break;
             }
         };
@@ -134,7 +121,7 @@ partial class Form1
             setSettingMenu(i);
         };
 
-        navBar = new NavBar(nav_items) {
+        navBar = new NavBar(nav_items, curNav) {
             Width = 200,
             AutoSize = true,
             Anchor = (AnchorStyles.Top | AnchorStyles.Left),
@@ -148,12 +135,29 @@ partial class Form1
             AutoScroll = true,
         };
 
-        setSettingMenu(0);
+        setSettingMenu(curNav);
 
         Controls.Add(mainPanel);
         Controls.Add(navBarPanel);
         Controls.Add(topBar);
 
+    }
+
+    #region Windows Form Designer generated code
+
+    /// <summary>
+    ///  Required method for Designer support - do not modify
+    ///  the contents of this method with the code editor.
+    /// </summary>
+    private void InitializeComponent()
+    {
+        components = new System.ComponentModel.Container();
+        AutoScaleMode = AutoScaleMode.Font;
+        ClientSize = new Size(800, 450);
+        Text = "Form1";
+        Icon = ImageLoader.loadIcon("app.ico");
+
+        InitializeComponentSelfManaged();
     }
 
     Panel topBar;

@@ -225,7 +225,7 @@ public class SearchBar : UserControl
         };
 
         input = new TextBox() {
-            PlaceholderText = "Find a setting",
+            PlaceholderText = ResourceManager.getString("search_placeholder"),
             Dock = DockStyle.Bottom,
             BackColor = Theme.BG_COLOR,
             BorderStyle = BorderStyle.None,
@@ -399,8 +399,8 @@ class NavBar : TableLayoutPanel {
     [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
     public Action<int>? onNavChange {get; set;}
 
-    public NavBar(List<NavMenuDetails> navItems){
-
+    public NavBar(List<NavMenuDetails> navItems, int curNav){
+        _activeItem = curNav;
         navButtons = new Dictionary<int, NavButton>();
         
         ColumnCount = 1;
@@ -431,7 +431,7 @@ class NavBar : TableLayoutPanel {
             Controls.Add(navButton);
         }
 
-        setNavItemActive(0, true);
+        setNavItemActive(curNav, true);
     }
 
     private void setNavItemActive(int item, bool active){
@@ -825,7 +825,7 @@ class DeviceRow : UserControl {
         };
 
         nameLabel = new Label() {
-            Font = new Font("Segoe UI Variable", 11, FontStyle.Bold),
+            Font = new Font("Segoe UI Variable", 11),
             AutoSize = true,
             ForeColor = Theme.FORE_MAIN_COLOR,
         };
@@ -1011,7 +1011,7 @@ class RouteButtonSubtitled : FocusableControl {
         titlePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100f));
 
         titleLabel = new Label() {
-            Font = new Font("Segoe UI Variable", 11, FontStyle.Bold),
+            Font = new Font("Segoe UI Variable", 11),
             AutoSize = true,
             Anchor = (AnchorStyles.Left | AnchorStyles.Right),
             ForeColor = Theme.FORE_MAIN_COLOR,

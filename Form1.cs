@@ -4,6 +4,7 @@ public partial class Form1 : Form
 {
 
     int curNav = 0;
+    int curLang = 0;
 
     private List<NavMenuDetails> nav_items
         = new List<NavMenuDetails>(){
@@ -419,8 +420,8 @@ public partial class Form1 : Form
                             icon = "speaker.svg",
                         },
                         new ButtonDetails(){
-                            id = "ear.svg",
-                            icon = "storage.svg",
+                            id = "hearing_devices",
+                            icon = "ear.svg",
                         },
                         new ButtonDetails(){
                             id = "captions",
@@ -651,13 +652,15 @@ public partial class Form1 : Form
         };
 
         mainPanel.Controls.Add(settingMenu);
+        curNav = item;
 
     }
 
-    private void changeLanguage(string langCode){
+    private void changeLanguage(string langCode, int index){
+        curLang = index;
         Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(langCode);
         this.Controls.Clear();
-        InitializeComponent();
+        InitializeComponentSelfManaged();
     }
 
 }
