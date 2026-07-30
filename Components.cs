@@ -1009,7 +1009,9 @@ class ButtonListPanel : UserControl {
 
     public ButtonListPanel(ButtonListDetails details, string parentId){
         AutoSize = true;
-        int rowCount = (details.buttons == null ? 0 : details.buttons.Count());
+        int titleOffset = (details.hasTitle ? 1 : 0);
+        int rowCount = titleOffset + 
+            (details.buttons == null ? 0 : details.buttons.Count());
 
         column = new TableLayoutPanel(){
             ColumnCount = 1,
@@ -1018,24 +1020,46 @@ class ButtonListPanel : UserControl {
             Dock = DockStyle.Fill,
         };
 
+        if (details.hasTitle){
+            Label titleLabel = new Label(){
+                Font = new Font("Segoe UI Variable", 11, FontStyle.Bold),
+                AutoSize = true,
+                Anchor = AnchorStyles.Left,
+                Text = ResourceManager.getString($"{parentId}.{details.id}"),
+            };
+
+            column.Controls.Add(titleLabel);
+        }
+
         if (details.buttons != null)
-            for (int i = 0; i < rowCount; i++)
+            for (int i = 0; i < rowCount - titleOffset; i++)
             {
                 int pos = i;
 
-                var routeButton = new RouteButtonSubtitled(){
+                if (details.buttons[pos].hasSubtitile) {
+                    var subbedRb = new RouteButtonSubtitled(){
+                        Icon = ImageLoader.loadImage(details.buttons[pos].icon),
+                        Title = ResourceManager.getString(
+                                $"{parentId}.{details.id}.{details.buttons[pos].id}.title"
+                                ),
+                        Subtitle = ResourceManager.getString(
+                                $"{parentId}.{details.id}.{details.buttons[pos].id}.subtitle"
+                                ),
+                        Dock = DockStyle.Fill,
+                    };
+
+                    column.Controls.Add(subbedRb);
+                    continue;
+                } 
+                var routeButton = new RouteButton(){
                     Icon = ImageLoader.loadImage(details.buttons[pos].icon),
-                    Title = ResourceManager.getString(
-                            $"{parentId}.{details.buttons[pos].id}.title"
-                    ),
-                    Subtitle = ResourceManager.getString(
-                            $"{parentId}.{details.buttons[pos].id}.subtitle"
-                    ),
+                    Label = ResourceManager.getString(
+                            $"{parentId}.{details.id}.{details.buttons[pos].id}.title"
+                            ),
                     Dock = DockStyle.Fill,
                 };
 
                 column.Controls.Add(routeButton);
-
             }
 
         Controls.Add(column);

@@ -16,6 +16,7 @@ class ButtonDetails {
     public string id {get; set;} = "";
     public string title {get; set;} = "";
     public string? subtitle {get; set;} = null;
+    public bool hasSubtitile {get; set;} = true;
     public string icon {get; set;} = "";
     public bool hasToggle {get; set;} = false;
     public bool toggleState {get; set;} = false;
@@ -35,6 +36,7 @@ class ButtonListDetails : SettingComponent
 {
 
     public string id {get; set;} = "";
+    public bool hasTitle {get; set;} = false;
     public List<ButtonDetails>? buttons {get; set;}
 
     public SettingComponentType getType()
