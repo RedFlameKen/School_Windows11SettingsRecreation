@@ -1036,7 +1036,7 @@ class ButtonListPanel : UserControl {
             {
                 int pos = i;
 
-                if (details.buttons[pos].hasSubtitile) {
+                if (details.buttons[pos].hasSubtitle) {
                     var subbedRb = new RouteButtonSubtitled(){
                         Icon = ImageLoader.loadImage(details.buttons[pos].icon),
                         Title = ResourceManager.getString(

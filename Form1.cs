@@ -372,12 +372,266 @@ public partial class Form1 : Form
             id = "accessibility",
             icon = "accessibility_color.svg",
             items = new List<SettingComponent>(){
+                new ButtonListDetails(){
+                    id="vision",
+                    hasTitle = true,
+                    buttons = new List<ButtonDetails>(){
+                        new ButtonDetails(){
+                            id = "text_size",
+                            icon = "storage.svg",
+                        },
+                        new ButtonDetails(){
+                            id = "visual_effects",
+                            icon = "storage.svg",
+                        },
+                        new ButtonDetails(){
+                            id = "mouse_pointer_and_touch",
+                            icon = "storage.svg",
+                        },
+                        new ButtonDetails(){
+                            id = "text_cursor",
+                            icon = "storage.svg",
+                        },
+                        new ButtonDetails(){
+                            id = "magnifier",
+                            icon = "storage.svg",
+                        },
+                        new ButtonDetails(){
+                            id = "color_filters",
+                            icon = "storage.svg",
+                        },
+                        new ButtonDetails(){
+                            id = "contrast_themes",
+                            icon = "storage.svg",
+                        },
+                        new ButtonDetails(){
+                            id = "narrator",
+                            icon = "storage.svg",
+                        },
+                    }
+                },
+                new ButtonListDetails(){
+                    id="hearing",
+                    hasTitle = true,
+                    buttons = new List<ButtonDetails>(){
+                        new ButtonDetails(){
+                            id = "audio",
+                            icon = "storage.svg",
+                        },
+                        new ButtonDetails(){
+                            id = "hearing_devices",
+                            icon = "storage.svg",
+                        },
+                        new ButtonDetails(){
+                            id = "captions",
+                            icon = "storage.svg",
+                        },
+                    }
+                },
+                new ButtonListDetails(){
+                    id="interaction",
+                    hasTitle = true,
+                    buttons = new List<ButtonDetails>(){
+                        new ButtonDetails(){
+                            id = "speech",
+                            icon = "storage.svg",
+                        },
+                        new ButtonDetails(){
+                            id = "keyboard",
+                            icon = "storage.svg",
+                        },
+                        new ButtonDetails(){
+                            id = "mouse",
+                            icon = "storage.svg",
+                        },
+                        new ButtonDetails(){
+                            id = "eye_control",
+                            icon = "storage.svg",
+                        },
+                    }
+                },
             }
         },
         new NavMenuDetails() {
             id = "privacy_and_security",
             icon = "shield_color.svg",
             items = new List<SettingComponent>(){
+                new ButtonListDetails(){
+                    id="security",
+                    hasTitle = true,
+                    buttons = new List<ButtonDetails>(){
+                        new ButtonDetails(){
+                            id = "windows_security",
+                            icon = "storage.svg",
+                        },
+                        new ButtonDetails(){
+                            id = "find_my_device",
+                            icon = "storage.svg",
+                        },
+                    }
+                },
+                new ButtonListDetails(){
+                    id="windows_permissions",
+                    hasTitle = true,
+                    buttons = new List<ButtonDetails>(){
+                        new ButtonDetails(){
+                            id = "recommendations_and_offers",
+                            icon = "storage.svg",
+                        },
+                        new ButtonDetails(){
+                            id = "speech",
+                            icon = "storage.svg",
+                        },
+                        new ButtonDetails(){
+                            id = "inking_and_typing_personalization",
+                            icon = "storage.svg",
+                        },
+                        new ButtonDetails(){
+                            id = "diagnostics_and_feedback",
+                            icon = "storage.svg",
+                        },
+                        new ButtonDetails(){
+                            id = "search",
+                            icon = "storage.svg",
+                        },
+                    }
+                },
+                new ButtonListDetails(){
+                    id="app_permissions",
+                    hasTitle = true,
+                    buttons = new List<ButtonDetails>(){
+                        new ButtonDetails(){
+                            id = "location",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "camera",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "microphone",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "voice_activation",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "notification",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "contacts",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "calendar",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "phone_calls",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "call_history",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "email",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "tasks",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "messaging",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "radios",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "other_devices",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "app_diagnostics",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "automatic_file_downloads",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "documents",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "downloads_folder",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "music_library",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "pictures",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "videos",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "file_system",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "screenshot_borders",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "screenshots_and_screen_recording",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "text_and_image_generation",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                        new ButtonDetails(){
+                            id = "passkeys",
+                            icon = "storage.svg",
+                            hasSubtitle = false,
+                        },
+                    }
+                },
             }
         },
     };

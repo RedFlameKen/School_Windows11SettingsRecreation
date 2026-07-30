@@ -16,7 +16,7 @@ class ButtonDetails {
     public string id {get; set;} = "";
     public string title {get; set;} = "";
     public string? subtitle {get; set;} = null;
-    public bool hasSubtitile {get; set;} = true;
+    public bool hasSubtitle {get; set;} = true;
     public string icon {get; set;} = "";
     public bool hasToggle {get; set;} = false;
     public bool toggleState {get; set;} = false;
