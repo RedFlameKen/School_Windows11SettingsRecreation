@@ -1,7 +1,6 @@
 bin/
 win11_settings_screenshots/
 obj/
-Components.cs
 
 *.suo
 *.user
