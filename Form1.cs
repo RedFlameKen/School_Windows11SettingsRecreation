@@ -3,6 +3,7 @@ namespace finals;
 public partial class Form1 : Form
 {
 
+    Stack<int> navStack;
     int curNav = 0;
     int curLang = 0;
 
@@ -669,6 +670,7 @@ public partial class Form1 : Form
 
     public Form1()
     {
+        navStack = new Stack<int>();
         InitializeComponent();
     }
 
@@ -684,10 +686,9 @@ public partial class Form1 : Form
         } else
             mainPanel.AutoScroll = false;
 
-        SettingMenu settingMenu = new SettingMenu(nav_items, item, navBar){
+        SettingMenu settingMenu = new SettingMenu(nav_items, item, navBar, navStack){
             Dock = dock,
             AutoSize = autoSize,
-
         };
 
         mainPanel.Controls.Add(settingMenu);

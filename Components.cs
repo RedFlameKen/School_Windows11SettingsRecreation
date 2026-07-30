@@ -383,13 +383,14 @@ class NavButton : FocusableControl {
 class NavBar : TableLayoutPanel {
 
     private Dictionary<int, NavButton> navButtons;
-
+    private Stack<int> navStack;
     private int _activeItem = 0;
 
     [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
     public int ActiveItem {
         get => _activeItem;
         set {
+            navStack.Push(_activeItem);
             setNavItemActive(_activeItem, false);
             _activeItem = value;
             setNavItemActive(value, true);
@@ -399,7 +400,8 @@ class NavBar : TableLayoutPanel {
     [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
     public Action<int>? onNavChange {get; set;}
 
-    public NavBar(List<NavMenuDetails> navItems, int curNav){
+    public NavBar(List<NavMenuDetails> navItems, int curNav, Stack<int> navStack){
+        this.navStack = navStack;
         _activeItem = curNav;
         navButtons = new Dictionary<int, NavButton>();
         
@@ -432,6 +434,14 @@ class NavBar : TableLayoutPanel {
         }
 
         setNavItemActive(curNav, true);
+    }
+
+    public void navigateBack(){
+        if(navStack.TryPop(out int result)) {
+            setNavItemActive(_activeItem, false);
+            _activeItem = result;
+            setNavItemActive(result, true);
+        }
     }
 
     private void setNavItemActive(int item, bool active){
@@ -651,7 +661,6 @@ class Dashboard : UserControl {
                 Icon = ImageLoader.loadImage(navItem.icon!),
                 AutoSize = true,
                 actionEvent = () => {
-                    Console.WriteLine($"clicky clicky bitch onNavChange is null: {onNavChange == null}");
                     if (onNavChange != null)
                         onNavChange(pos);
                 }
@@ -1280,9 +1289,11 @@ class SettingMenu : UserControl
     private NavMenuDetails details;
     private List<NavMenuDetails> detailList;
     private NavBar navBar;
+    private Stack<int> navStack;
 
-    public SettingMenu(List<NavMenuDetails> detailList, int item, NavBar navBar) {
+    public SettingMenu(List<NavMenuDetails> detailList, int item, NavBar navBar, Stack<int> navStack) {
         this.navBar = navBar;
+        this.navStack = navStack;
         this.detailList = detailList;
         this.details = detailList[item];
 

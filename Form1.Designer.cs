@@ -23,7 +23,10 @@ partial class Form1
     private void InitializeComponentSelfManaged(){
         IconButton backButton = new IconButton(){
             Icon = ImageLoader.loadImage("arrow_left.png"),
-            Anchor = AnchorStyles.None
+            Anchor = AnchorStyles.None,
+            actionEvent = () => {
+                navBar.navigateBack();
+            }
         };
 
         Label windowTitle = new Label() {
@@ -118,14 +121,15 @@ partial class Form1
         };
 
         Action<int> navChanged = (i) => {
+            // navStack.Push(curNav);
             setSettingMenu(i);
         };
 
-        navBar = new NavBar(nav_items, curNav) {
+        navBar = new NavBar(nav_items, curNav, navStack) {
             Width = 200,
             AutoSize = true,
             Anchor = (AnchorStyles.Top | AnchorStyles.Left),
-            onNavChange = navChanged
+            onNavChange = navChanged,
         };
 
         navBarPanel.Controls.Add(navBar);
