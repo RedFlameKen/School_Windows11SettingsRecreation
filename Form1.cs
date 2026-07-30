@@ -370,6 +370,33 @@ public partial class Form1 : Form
             }
         },
         new NavMenuDetails() {
+            id = "time_and_language",
+            icon = "globe_clock_color.png",
+            items = new List<SettingComponent>(){
+                new ButtonListDetails(){
+                    id="time_and_language",
+                    buttons = new List<ButtonDetails>(){
+                        new ButtonDetails(){
+                            id = "date_and_time",
+                            icon = "calendar_clock.png",
+                        },
+                        new ButtonDetails(){
+                            id = "language_and_region",
+                            icon = "local_language.png",
+                        },
+                        new ButtonDetails(){
+                            id = "typing",
+                            icon = "keyboard.png",
+                        },
+                        new ButtonDetails(){
+                            id = "speech",
+                            icon = "person_voice.png",
+                        },
+                    }
+                },
+            }
+        },
+        new NavMenuDetails() {
             id = "accessibility",
             icon = "accessibility_color.png",
             items = new List<SettingComponent>(){

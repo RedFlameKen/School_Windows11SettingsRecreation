@@ -30,6 +30,7 @@
       <EmbeddedResource Include="assets/calendar_assistant.png" />
       <EmbeddedResource Include="assets/calendar_checkmark.png" />
       <EmbeddedResource Include="assets/calendar_check.png" />
+      <EmbeddedResource Include="assets/calendar_clock.png" />
       <EmbeddedResource Include="assets/calendar_lock.png" />
       <EmbeddedResource Include="assets/calendar.png" />
       <EmbeddedResource Include="assets/call.png" />
@@ -57,6 +58,7 @@
       <EmbeddedResource Include="assets/ear.png" />
       <EmbeddedResource Include="assets/eye_tracking.png" />
       <EmbeddedResource Include="assets/folder_document.png" />
+      <EmbeddedResource Include="assets/globe_clock_color.png" />
       <EmbeddedResource Include="assets/globe_desktop.png" />
       <EmbeddedResource Include="assets/headset.png" />
       <EmbeddedResource Include="assets/history.png" />
@@ -71,16 +73,18 @@
       <EmbeddedResource Include="assets/laptop_color.png" />
       <EmbeddedResource Include="assets/laptop_multiple.png" />
       <EmbeddedResource Include="assets/laptop.png" />
+      <EmbeddedResource Include="assets/local_language.png" />
       <EmbeddedResource Include="assets/locate_device.png" />
       <EmbeddedResource Include="assets/location_arrow.png" />
       <EmbeddedResource Include="assets/lock_closed.png" />
       <EmbeddedResource Include="assets/mail.png" />
       <EmbeddedResource Include="assets/map.png" />
-      <EmbeddedResource Include="assets/mic_record.png" />
       <EmbeddedResource Include="assets/mic.png" />
+      <EmbeddedResource Include="assets/mic_record.png" />
       <EmbeddedResource Include="assets/more.png" />
       <EmbeddedResource Include="assets/mouse.png" />
       <EmbeddedResource Include="assets/music_note_play.png" />
+      <EmbeddedResource Include="assets/new.png" />
       <EmbeddedResource Include="assets/paint_brush.png" />
       <EmbeddedResource Include="assets/panel_right_gallery.png" />
       <EmbeddedResource Include="assets/panel_separate_window.png" />
@@ -103,8 +107,8 @@
       <EmbeddedResource Include="assets/remote.png" />
       <EmbeddedResource Include="assets/reset.png" />
       <EmbeddedResource Include="assets/scan_type.png" />
-      <EmbeddedResource Include="assets/search_square.png" />
       <EmbeddedResource Include="assets/search.png" />
+      <EmbeddedResource Include="assets/search_square.png" />
       <EmbeddedResource Include="assets/server_link.png" />
       <EmbeddedResource Include="assets/share.png" />
       <EmbeddedResource Include="assets/shield_color.png" />
@@ -128,8 +132,8 @@
       <EmbeddedResource Include="assets/virtual_network.png" />
       <EmbeddedResource Include="assets/wifi_color.png" />
       <EmbeddedResource Include="assets/wifi.png" />
-      <EmbeddedResource Include="assets/wrench_screwdriver.png" />
       <EmbeddedResource Include="assets/wrench.png" />
+      <EmbeddedResource Include="assets/wrench_screwdriver.png" />
       <EmbeddedResource Include="assets/zoom_in.png" />
   </ItemGroup>
 </Project>

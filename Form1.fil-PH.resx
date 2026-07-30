@@ -71,6 +71,10 @@
       <value>Mga Account</value>
   </data>
 
+  <data name="time_and_language" xml:space="preserve">
+<value>Oras at wika</value>
+  </data>
+
   <data name="accessibility" xml:space="preserve">
       <value>Accessibility</value>
   </data>
@@ -552,6 +556,36 @@
   <data name="accounts.related_settings.account_and_billing_help.subtitle" xml:space="preserve">
 <value>Kumuha ng suporta para sa mga subscription, pagbabayad, at pagsingil</value>
   </data>
+
+
+  <data name="time_and_language.time_and_language.date_and_time.title" xml:space="preserve">
+<value>Petsa at oras</value>
+  </data>
+  <data name="time_and_language.time_and_language.date_and_time.subtitle" xml:space="preserve">
+<value>Mga time zone, awtomatikong setting ng orasan, display sa kalendaryo</value>
+  </data>
+
+  <data name="time_and_language.time_and_language.language_and_region.title" xml:space="preserve">
+<value>Wika at rehiyon</value>
+  </data>
+  <data name="time_and_language.time_and_language.language_and_region.subtitle" xml:space="preserve">
+<value>Wika ng display sa Windows, mga gustong wika, mga format ng rehiyon</value>
+  </data>
+
+  <data name="time_and_language.time_and_language.typing.title" xml:space="preserve">
+<value>Pagta-type</value>
+  </data>
+  <data name="time_and_language.time_and_language.typing.subtitle" xml:space="preserve">
+<value>Pindutin ang keyboard, mga mungkahi sa text, mga kagustuhan</value>
+  </data>
+
+  <data name="time_and_language.time_and_language.speech.title" xml:space="preserve">
+<value>Pagsasalita</value>
+  </data>
+  <data name="time_and_language.time_and_language.speech.subtitle" xml:space="preserve">
+<value>Wika ng pagsasalita, pag-setup ng mikropono ng speech recognition, mga boses</value>
+  </data>
+
 
 
   <data name="accessibility.vision" xml:space="preserve">

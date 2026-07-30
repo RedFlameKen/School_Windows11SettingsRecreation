@@ -61,6 +61,10 @@
     <value>Accounts</value>
   </data>
 
+  <data name="time_and_language" xml:space="preserve">
+    <value>Time &amp;&amp; language</value>
+  </data>
+
   <data name="accessibility" xml:space="preserve">
     <value>Accessibility</value>
   </data>
@@ -543,8 +547,37 @@
     <value>Get support for subscriptions, payments, and billing</value>
   </data>
 
-  
 
+
+  <data name="time_and_language.time_and_language.date_and_time.title" xml:space="preserve">
+    <value>Date &amp;&amp; time</value>
+  </data>
+  <data name="time_and_language.time_and_language.date_and_time.subtitle" xml:space="preserve">
+    <value>Time zones, automatic clock settings, calendar display</value>
+  </data>
+
+  <data name="time_and_language.time_and_language.language_and_region.title" xml:space="preserve">
+    <value>Language &amp;&amp; region</value>
+  </data>
+  <data name="time_and_language.time_and_language.language_and_region.subtitle" xml:space="preserve">
+    <value>Windows display language, preferred languages, regional formats</value>
+  </data>
+
+  <data name="time_and_language.time_and_language.typing.title" xml:space="preserve">
+    <value>Typing</value>
+  </data>
+  <data name="time_and_language.time_and_language.typing.subtitle" xml:space="preserve">
+    <value>Touch keyboard, text suggestions, preferences</value>
+  </data>
+
+  <data name="time_and_language.time_and_language.speech.title" xml:space="preserve">
+    <value>Speech</value>
+  </data>
+  <data name="time_and_language.time_and_language.speech.subtitle" xml:space="preserve">
+    <value>Speech language, speech recognition microphone setup, voices</value>
+  </data>
+
+  
   <data name="accessibility.vision" xml:space="preserve">
     <value>Vision</value>
   </data>
