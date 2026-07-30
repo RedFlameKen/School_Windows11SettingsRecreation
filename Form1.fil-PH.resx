@@ -27,7 +27,7 @@
       </xsd:complexType>
     </xsd:element>
   </xsd:schema>
-  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, resgen, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, resgen, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value></resheader>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, resgen, Version=4.0.0.0, Ctral PublicKeyToken=null</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, resgen, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value></resheader>
 
 
   <data name="languageText" xml:space="preserve">
@@ -108,145 +108,731 @@
       <value>Pamahalaan, magdagdag, at alisin ang mga device</value>
   </data>
 
-  <data name="system.display.title" xml:space="preserve">
+
+
+  <data name="system.system.display.title" xml:space="preserve">
 <value>Ipakita</value>
   </data>
-  <data name="system.display.subtitle" xml:space="preserve">
+  <data name="system.system.display.subtitle" xml:space="preserve">
 <value>Mga monitor, liwanag, ilaw sa gabi, display profile</value>
   </data>
 
-  <data name="system.sound.title" xml:space="preserve">
+  <data name="system.system.sound.title" xml:space="preserve">
 <value>Tunog</value>
   </data>
-  <data name="system.sound.subtitle" xml:space="preserve">
+  <data name="system.system.sound.subtitle" xml:space="preserve">
 <value>Mga antas ng volume, output, input, sound device</value>
   </data>
 
-  <data name="system.notifications.title" xml:space="preserve">
+  <data name="system.system.notifications.title" xml:space="preserve">
 <value>Mga Notification</value>
   </data>
-  <data name="system.notifications.subtitle" xml:space="preserve">
+  <data name="system.system.notifications.subtitle" xml:space="preserve">
 <value>Mga alerto mula sa mga app at system, huwag istorbohin</value>
   </data>
 
-  <data name="system.focus.title" xml:space="preserve">
+  <data name="system.system.focus.title" xml:space="preserve">
 <value>Focus</value>
   </data>
-  <data name="system.focus.subtitle" xml:space="preserve">
+  <data name="system.system.focus.subtitle" xml:space="preserve">
 <value>Bawasan ang mga distractions</value>
   </data>
 
-  <data name="system.power_and_battery.title" xml:space="preserve">
+  <data name="system.system.power_and_battery.title" xml:space="preserve">
 <value>Power at Baterya</value>
   </data>
-  <data name="system.power_and_battery.subtitle" xml:space="preserve">
+  <data name="system.system.power_and_battery.subtitle" xml:space="preserve">
 <value>Screen at sleep, paggamit ng baterya, power mode, energy saver</value>
   </data>
 
-  <data name="system.storage.title" xml:space="preserve">
+  <data name="system.system.storage.title" xml:space="preserve">
 <value>Imbakan</value>
   </data>
-  <data name="system.storage.subtitle" xml:space="preserve">
+  <data name="system.system.storage.subtitle" xml:space="preserve">
 <value>Space ng storage, mga drive, mga panuntunan sa configuration</value>
   </data>
 
-  <data name="system.nearby_sharing.title" xml:space="preserve">
+  <data name="system.system.nearby_sharing.title" xml:space="preserve">
 <value>Kalapit na pagbabahagi</value>
   </data>
-  <data name="system.nearby_sharing.subtitle" xml:space="preserve">
+  <data name="system.system.nearby_sharing.subtitle" xml:space="preserve">
 <value>Discoverability, natanggap na lokasyon ng mga file</value>
   </data>
 
-  <data name="system.multitasking.title" xml:space="preserve">
+  <data name="system.system.multitasking.title" xml:space="preserve">
 <value>Multitasking</value>
   </data>
-  <data name="system.multitasking.subtitle" xml:space="preserve">
+  <data name="system.system.multitasking.subtitle" xml:space="preserve">
 <value>Mga snap window, desktop, paglipat ng gawain</value>
   </data>
 
-  <data name="system.advanced.title" xml:space="preserve">
+  <data name="system.system.advanced.title" xml:space="preserve">
 <value>Advanced</value>
   </data>
-  <data name="system.advanced.subtitle" xml:space="preserve">
+  <data name="system.system.advanced.subtitle" xml:space="preserve">
 <value>Pagganap, pag-optimize, at mga tampok ng developer</value>
   </data>
 
-  <data name="system.activation.title" xml:space="preserve">
+  <data name="system.system.activation.title" xml:space="preserve">
 <value>Pag-activate</value>
   </data>
-  <data name="system.activation.subtitle" xml:space="preserve">
+  <data name="system.system.activation.subtitle" xml:space="preserve">
 <value>Status ng activation, subscription, product key</value>
   </data>
 
-  <data name="system.troubleshooting.title" xml:space="preserve">
+  <data name="system.system.troubleshooting.title" xml:space="preserve">
 <value>Pag-troubleshoot</value>
   </data>
-  <data name="system.troubleshooting.subtitle" xml:space="preserve">
+  <data name="system.system.troubleshooting.subtitle" xml:space="preserve">
 <value>Mga inirerekomendang troubleshooter, kagustuhan, kasaysayan</value>
   </data>
 
-  <data name="system.recovery.title" xml:space="preserve">
+  <data name="system.system.recovery.title" xml:space="preserve">
 <value>Pagbawi</value>
   </data>
-  <data name="system.recovery.subtitle" xml:space="preserve">
+  <data name="system.system.recovery.subtitle" xml:space="preserve">
 <value>I-reset, advanced na startup, bumalik</value>
   </data>
 
-  <data name="system.projecting_to_this_pc.title" xml:space="preserve">
+  <data name="system.system.projecting_to_this_pc.title" xml:space="preserve">
 <value>Pag-project sa PC na ito</value>
   </data>
-  <data name="system.projecting_to_this_pc.subtitle" xml:space="preserve">
+  <data name="system.system.projecting_to_this_pc.subtitle" xml:space="preserve">
 <value>Mga pahintulot, pagpapares ng PIN, kakayahang matuklasan</value>
   </data>
 
-  <data name="system.remote_desktop.title" xml:space="preserve">
+  <data name="system.system.remote_desktop.title" xml:space="preserve">
   <value>Remote Desktop</value>
   </data>
-  <data name="system.remote_desktop.subtitle" xml:space="preserve">
+  <data name="system.system.remote_desktop.subtitle" xml:space="preserve">
 <value>Mga user ng Remote na Desktop, mga pahintulot sa koneksyon</value>
   </data>
 
-  <data name="system.clipboard.title" xml:space="preserve">
+  <data name="system.system.clipboard.title" xml:space="preserve">
 <value>Clipboard</value>
   </data>
-  <data name="system.clipboard.subtitle" xml:space="preserve">
+  <data name="system.system.clipboard.subtitle" xml:space="preserve">
 <value>I-cut at kopyahin ang kasaysayan, i-sync, i-clear</value>
   </data>
 
-  <data name="system.system_components.title" xml:space="preserve">
+  <data name="system.system.system_components.title" xml:space="preserve">
 <value>System Components</value>
   </data>
-  <data name="system.system_components.subtitle" xml:space="preserve">
+  <data name="system.system.system_components.subtitle" xml:space="preserve">
 <value>Pamahalaan ang mga bahagi ng system na paunang naka-install sa Windows</value>
   </data>
 
-  <data name="system.ai_components.title" xml:space="preserve">
+  <data name="system.system.ai_components.title" xml:space="preserve">
   <value>mga bahagi ng AI</value>
   </data>
-  <data name="system.ai_components.subtitle" xml:space="preserve">
+  <data name="system.system.ai_components.subtitle" xml:space="preserve">
 <value>Tingnan ang mga bahagi ng AI na naka-install sa iyong PC</value>
   </data>
 
-  <data name="system.optional_features.title" xml:space="preserve">
+  <data name="system.system.optional_features.title" xml:space="preserve">
 <value>Mga opsyonal na feature</value>
   </data>
-  <data name="system.optional_features.subtitle" xml:space="preserve">
+  <data name="system.system.optional_features.subtitle" xml:space="preserve">
 <value>Karagdagang functionality para sa iyong device</value>
   </data>
 
-  <data name="system.about.title" xml:space="preserve">
+  <data name="system.system.about.title" xml:space="preserve">
   <value>Tungkol sa</value>
   </data>
-  <data name="system.about.subtitle" xml:space="preserve">
+  <data name="system.system.about.subtitle" xml:space="preserve">
   <value>Mga detalye ng device, palitan ang pangalan ng PC, mga detalye ng Windows</value>
   </data>
 
-  <data name="network_and_internet.wifi.title" xml:space="preserve">
-    <value>WI-FI</value>
+
+
+  <data name="network_and_internet.network.wifi.title" xml:space="preserve">
+    <value>Wi-Fi</value>
   </data>
-  <data name="network_and_internet.wifi.subtitle" xml:space="preserve">
+  <data name="network_and_internet.network.wifi.subtitle" xml:space="preserve">
   <value>Kumonekta, pamahalaan ang mga kilalang network, metered network</value>
   </data>
 
-</root>
+  <data name="network_and_internet.network.ethernet.title" xml:space="preserve">
+<value>Ethernet</value>
+  </data>
+  <data name="network_and_internet.network.ethernet.subtitle" xml:space="preserve">
+<value>Authentication, IP at DNS setting, metered network</value>
+  </data>
 
+  <data name="network_and_internet.network.vpn.title" xml:space="preserve">
+<value>VPN</value>
+  </data>
+  <data name="network_and_internet.network.vpn.subtitle" xml:space="preserve">
+<value>Magdagdag, magkonekta, mamahala</value>
+  </data>
+
+  <data name="network_and_internet.network.mobile_hotspot.title" xml:space="preserve">
+<value>Mobile hotspot</value>
+  </data>
+  <data name="network_and_internet.network.mobile_hotspot.subtitle" xml:space="preserve">
+<value>Ibahagi ang iyong koneksyon sa internet</value>
+  </data>
+
+  <data name="network_and_internet.network.airplane_mode.title" xml:space="preserve">
+<value>Airplane mode</value>
+  </data>
+  <data name="network_and_internet.network.airplane_mode.subtitle" xml:space="preserve">
+<value>Ihinto ang wireless na komunikasyon</value>
+  </data>
+
+  <data name="network_and_internet.network.proxy.title" xml:space="preserve">
+<value>Proxy</value>
+  </data>
+  <data name="network_and_internet.network.proxy.subtitle" xml:space="preserve">
+<value>Proxy server para sa koneksyon ng Wi-Fi at Ethernet</value>
+  </data>
+
+  <data name="network_and_internet.network.dial-up.title" xml:space="preserve">
+<value>Dial-up</value>
+  </data>
+  <data name="network_and_internet.network.dial-up.subtitle" xml:space="preserve">
+<value>Mag-set up ng dial-up na koneksyon sa internet</value>
+  </data>
+
+  <data name="network_and_internet.network.advanced_network_settings.title" xml:space="preserve">
+<value>Mga advanced na setting ng network</value>
+  </data>
+  <data name="network_and_internet.network.advanced_network_settings.subtitle" xml:space="preserve">
+<value>Tingnan ang lahat ng network adapters, network reset</value>
+  </data>
+
+
+
+  <data name="personalization.personalization.background.title" xml:space="preserve">
+<value>Background</value>
+  </data>
+  <data name="personalization.personalization.background.subtitle" xml:space="preserve">
+<value>Larawan sa background, kulay, slideshow</value>
+  </data>
+
+  <data name="personalization.personalization.colors.title" xml:space="preserve">
+<value>Mga Kulay</value>
+  </data>
+  <data name="personalization.personalization.colors.subtitle" xml:space="preserve">
+<value>Kulay ng accent, mga epekto ng transparency, tema ng kulay</value>
+  </data>
+
+  <data name="personalization.personalization.themes.title" xml:space="preserve">
+<value>Mga Tema</value>
+  </data>
+  <data name="personalization.personalization.themes.subtitle" xml:space="preserve">
+<value>I-install, lumikha, pamahalaan</value>
+  </data>
+
+  <data name="personalization.personalization.dynamic_lighting.title" xml:space="preserve">
+<value>Dynamic na Pag-iilaw</value>
+  </data>
+  <data name="personalization.personalization.dynamic_lighting.subtitle" xml:space="preserve">
+<value>Mga nakakonektang device, effect, setting ng app</value>
+  </data>
+
+  <data name="personalization.personalization.lock_screen.title" xml:space="preserve">
+<value>Lock screen</value>
+  </data>
+  <data name="personalization.personalization.lock_screen.subtitle" xml:space="preserve">
+<value>Mga larawan sa lock screen, app, animation</value>
+  </data>
+
+  <data name="personalization.personalization.text_input.title" xml:space="preserve">
+<value>Text input</value>
+  </data>
+  <data name="personalization.personalization.text_input.subtitle" xml:space="preserve">
+<value>Touch keyboard, voice typing, emoji at higit pa, input method editor</value>
+  </data>
+
+  <data name="personalization.personalization.start.title" xml:space="preserve">
+<value>Simulan</value>
+  </data>
+  <data name="personalization.personalization.start.subtitle" xml:space="preserve">
+<value>Mga kamakailang app at item, mga toolbar</value>
+  </data>
+
+  <data name="personalization.personalization.taskbar.title" xml:space="preserve">
+<value>Taskbar</value>
+  </data>
+  <data name="personalization.personalization.taskbar.subtitle" xml:space="preserve">
+<value>Mga gawi sa Taskbar, mga pin ng system</value>
+  </data>
+
+  <data name="personalization.personalization.fonts.title" xml:space="preserve">
+<value>Mga Font</value>
+  </data>
+  <data name="personalization.personalization.fonts.subtitle" xml:space="preserve">
+<value>I-install, pamahalaan</value>
+  </data>
+
+  <data name="personalization.personalization.device_usage.title" xml:space="preserve">
+<value>Paggamit ng device</value>
+  </data>
+  <data name="personalization.personalization.device_usage.subtitle" xml:space="preserve">
+<value>Piliin ang lahat ng paraan na pinaplano mong gamitin ang iyong device para makakuha ng mga personalized na tip, ad, at rekomendasyon sa mga karanasan sa Microsoft</value>
+  </data>
+
+
+
+  <data name="apps.apps.installed_apps.title" xml:space="preserve">
+<value>Mga naka-install na app</value>
+  </data>
+  <data name="apps.apps.installed_apps.subtitle" xml:space="preserve">
+<value>I-uninstall at pamahalaan ang mga app sa iyong PC</value>
+  </data>
+
+  <data name="apps.apps.advanced_app_settings.title" xml:space="preserve">
+<value>Mga advanced na setting ng app</value>
+  </data>
+  <data name="apps.apps.advanced_app_settings.subtitle" xml:space="preserve">
+<value>Piliin kung saan kukuha ng mga app, mag-archive ng mga app, mag-uninstall ng mga update</value>
+  </data>
+
+  <data name="apps.apps.default_apps.title" xml:space="preserve">
+<value>Default na app</value>
+  </data>
+  <data name="apps.apps.default_apps.subtitle" xml:space="preserve">
+<value>Mga Default para sa mga uri ng file at link, iba pang mga default</value>
+  </data>
+
+  <data name="apps.apps.actions.title" xml:space="preserve">
+<value>Mga Pagkilos</value>
+  </data>
+  <data name="apps.apps.actions.subtitle" xml:space="preserve">
+<value>Maaaring magrekomenda ang Windows ng mga pagkilos mula sa mga app na ito.</value>
+  </data>
+
+  <data name="apps.apps.offline_maps.title" xml:space="preserve">
+<value>Mga offline na mapa</value>
+  </data>
+  <data name="apps.apps.offline_maps.subtitle" xml:space="preserve">
+<value>Mga download, lokasyon ng storage, mga update sa mapa</value>
+  </data>
+
+  <data name="apps.apps.apps_for_websites.title" xml:space="preserve">
+<value>Mga app para sa mga website</value>
+  </data>
+  <data name="apps.apps.apps_for_websites.subtitle" xml:space="preserve">
+<value>Mga website na maaaring magbukas sa isang app sa halip na isang browser</value>
+  </data>
+
+  <data name="apps.apps.video_playback.title" xml:space="preserve">
+<value>Pag-playback ng Video</value>
+  </data>
+  <data name="apps.apps.video_playback.subtitle" xml:space="preserve">
+<value>Mga pagsasaayos ng video, HDR streaming na mga opsyon sa baterya</value>
+  </data>
+
+  <data name="apps.apps.startup.title" xml:space="preserve">
+<value>Startup</value>
+  </data>
+  <data name="apps.apps.startup.subtitle" xml:space="preserve">
+<value>Mga app na awtomatikong nagsisimula kapag nag-sign in ka</value>
+  </data>
+
+  <data name="apps.apps.resume.title" xml:space="preserve">
+<value>Ipagpatuloy</value>
+  </data>
+  <data name="apps.apps.resume.subtitle" xml:space="preserve">
+<value>Magpatuloy sa pagtatrabaho sa mga device</value>
+  </data>
+
+
+  <data name="accounts.account_settings" xml:space="preserve">
+<value>Mga Setting ng Account</value>
+  </data>
+
+  <data name="accounts.account_settings.your_info.title" xml:space="preserve">
+<value>Iyong impormasyon</value>
+  </data>
+  <data name="accounts.account_settings.your_info.subtitle" xml:space="preserve">
+<value>Larawan sa profile</value>
+  </data>
+
+  <data name="accounts.account_settings.sign-in_options.title" xml:space="preserve">
+<value>Mga opsyon sa pag-sign-in</value>
+  </data>
+  <data name="accounts.account_settings.sign-in_options.subtitle" xml:space="preserve">
+<value>Windows hello, security key, password, dynamic na lock</value>
+  </data>
+
+  <data name="accounts.account_settings.linked_devices.title" xml:space="preserve">
+<value>Mga naka-link na device</value>
+  </data>
+  <data name="accounts.account_settings.linked_devices.subtitle" xml:space="preserve">
+<value>Hanapin, ayusin, at pamahalaan ang mga device na naka-sign in gamit ang iyong Microsoft account</value>
+  </data>
+
+  <data name="accounts.account_settings.your_accounts.title" xml:space="preserve">
+<value>Iyong mga account</value>
+  </data>
+  <data name="accounts.account_settings.your_accounts.subtitle" xml:space="preserve">
+<value>Magdagdag o mamahala ng mga account na ginamit sa Windows</value>
+  </data>
+
+  <data name="accounts.account_settings.family.title" xml:space="preserve">
+<value>Pamilya</value>
+  </data>
+  <data name="accounts.account_settings.family.subtitle" xml:space="preserve">
+<value>Pamahalaan ang iyong grupo ng pamilya, i-edit ang mga uri ng account at mga pahintulot sa device</value>
+  </data>
+
+  <data name="accounts.account_settings.windows_backup.title" xml:space="preserve">
+<value>Windows backup</value>
+  </data>
+  <data name="accounts.account_settings.windows_backup.subtitle" xml:space="preserve">
+<value>I-back up ang iyong mga file, app, mga kagustuhan upang maibalik ang mga ito sa mga device</value>
+  </data>
+
+  <data name="accounts.account_settings.other_users.title" xml:space="preserve">
+<value>Iba pang mga user</value>
+  </data>
+  <data name="accounts.account_settings.other_users.subtitle" xml:space="preserve">
+<value>Access ng device, mga user sa trabaho o paaralan, kiosk, nakatalagang access</value>
+  </data>
+
+  <data name="accounts.account_settings.access_work_or_school.title" xml:space="preserve">
+<value>I-access ang trabaho o paaralan</value>
+  </data>
+  <data name="accounts.account_settings.access_work_or_school.subtitle" xml:space="preserve">
+<value>Mga mapagkukunan ng organisasyon tulad ng email, apps, at network</value>
+  </data>
+
+  <data name="accounts.account_settings.passkeys.title" xml:space="preserve">
+<value>Mga Passkey</value>
+  </data>
+  <data name="accounts.account_settings.passkeys.subtitle" xml:space="preserve">
+<value>Gamitin ang iyong mukha, fingerprint, o PIN upang mag-sign in sa mga app at website</value>
+  </data>
+
+
+  <data name="accounts.related_settings" xml:space="preserve">
+<value>Mga Kaugnay na Setting</value>
+  </data>
+
+  <data name="accounts.related_settings.account_privacy.title" xml:space="preserve">
+<value>Privacy ng account</value>
+  </data>
+  <data name="accounts.related_settings.account_privacy.subtitle" xml:space="preserve">
+<value>Tingnan ang iyong privacy dashboard at pamahalaan ang data ng aktibidad</value>
+  </data>
+
+  <data name="accounts.related_settings.subscriptions.title" xml:space="preserve">
+<value>Mga Subscription</value>
+  </data>
+  <data name="accounts.related_settings.subscriptions.subtitle" xml:space="preserve">
+<value>Pamahalaan ang mga serbisyo at subscription mula sa Microsoft</value>
+  </data>
+
+  <data name="accounts.related_settings.payment_options.title" xml:space="preserve">
+<value>Mga opsyon sa pagbabayad</value>
+  </data>
+  <data name="accounts.related_settings.payment_options.subtitle" xml:space="preserve">
+<value>Pamahalaan kung paano ka magbabayad para sa mga pagbili gamit ang iyong Microsoft account</value>
+  </data>
+
+  <data name="accounts.related_settings.order_history.title" xml:space="preserve">
+<value>Kasaysayan ng order</value>
+  </data>
+  <data name="accounts.related_settings.order_history.subtitle" xml:space="preserve">
+<value>Tingnan ang mga kamakailang pagbili na ginawa gamit ang iyong Microsoft account</value>
+  </data>
+
+  <data name="accounts.related_settings.account_and_billing_help.title" xml:space="preserve">
+<value>Tulong sa account at sa pagsingil</value>
+  </data>
+  <data name="accounts.related_settings.account_and_billing_help.subtitle" xml:space="preserve">
+<value>Kumuha ng suporta para sa mga subscription, pagbabayad, at pagsingil</value>
+  </data>
+
+
+  <data name="accessibility.vision" xml:space="preserve">
+<value>Vision</value>
+  </data>
+
+  <data name="accessibility.vision.text_size.title" xml:space="preserve">
+<value>Laki ng text</value>
+  </data>
+  <data name="accessibility.vision.text_size.subtitle" xml:space="preserve">
+<value>Laki ng text na lumalabas sa buong Windows at iyong mga app</value>
+  </data>
+
+  <data name="accessibility.vision.visual_effects.title" xml:space="preserve">
+<value>Mga visual effect</value>
+  </data>
+  <data name="accessibility.vision.visual_effects.subtitle" xml:space="preserve">
+<value>Mga scroll bar, transparency, animation, timeout ng notification</value>
+  </data>
+
+  <data name="accessibility.vision.mouse_pointer_and_touch.title" xml:space="preserve">
+<value>Mouse pointer at touch</value>
+  </data>
+  <data name="accessibility.vision.mouse_pointer_and_touch.subtitle" xml:space="preserve">
+<value>Kulay, laki ng mouse pointer</value>
+  </data>
+
+  <data name="accessibility.vision.text_cursor.title" xml:space="preserve">
+<value>Cursor ng text</value>
+  </data>
+  <data name="accessibility.vision.text_cursor.subtitle" xml:space="preserve">
+<value>Hitsura at kapal, tagapagpahiwatig ng cursor ng teksto</value>
+  </data>
+
+  <data name="accessibility.vision.magnifier.title" xml:space="preserve">
+<value>Magnifier</value>
+  </data>
+  <data name="accessibility.vision.magnifier.subtitle" xml:space="preserve">
+<value>Mga setting ng magnifier, pagtaas ng zoom</value>
+  </data>
+
+  <data name="accessibility.vision.color_filters.title" xml:space="preserve">
+<value>Mga filter ng kulay</value>
+  </data>
+  <data name="accessibility.vision.color_filters.subtitle" xml:space="preserve">
+<value>Colorblindness, mga filter, grayscale, inverted</value>
+  </data>
+
+  <data name="accessibility.vision.contrast_themes.title" xml:space="preserve">
+<value>Contrast na mga tema</value>
+  </data>
+  <data name="accessibility.vision.contrast_themes.subtitle" xml:space="preserve">
+<value>Mga tema ng kulay para sa mahinang paningin, pagiging sensitibo sa liwanag</value>
+  </data>
+
+  <data name="accessibility.vision.narrator.title" xml:space="preserve">
+<value>Narrator</value>
+  </data>
+  <data name="accessibility.vision.narrator.subtitle" xml:space="preserve">
+<value>Boses, verbosity, keyboard, braille</value>
+  </data>
+
+
+  <data name="accessibility.hearing" xml:space="preserve">
+<value>Pagdinig</value>
+  </data>
+  
+  <data name="accessibility.hearing.audio.title" xml:space="preserve">
+<value>Audio</value>
+  </data>
+  <data name="accessibility.hearing.audio.subtitle" xml:space="preserve">
+<value>Mono audio, audio notification</value>
+  </data>
+
+  <data name="accessibility.hearing.hearing_devices.title" xml:space="preserve">
+<value>Hearing device</value>
+  </data>
+  <data name="accessibility.hearing.hearing_devices.subtitle" xml:space="preserve">
+<value>Mga preset, environment, sound control, audio routing</value>
+  </data>
+
+  <data name="accessibility.hearing.captions.title" xml:space="preserve">
+<value>Mga Caption</value>
+  </data>
+  <data name="accessibility.hearing.captions.subtitle" xml:space="preserve">
+<value>Mga istilo, live na caption</value>
+  </data>
+
+
+  <data name="accessibility.interaction" xml:space="preserve">
+<value>Pakikipag-ugnayan</value>
+  </data>
+
+  <data name="accessibility.interaction.speech.title" xml:space="preserve">
+<value>Pagsasalita</value>
+  </data>
+  <data name="accessibility.interaction.speech.subtitle" xml:space="preserve">
+<value>Voice access, voice typing</value>
+  </data>
+
+  <data name="accessibility.interaction.keyboard.title" xml:space="preserve">
+<value>Keyboard</value>
+  </data>
+  <data name="accessibility.interaction.keyboard.subtitle" xml:space="preserve">
+<value>Mga sticky, Filter, at Toggle key, on-screen na keyboard</value>
+  </data>
+
+  <data name="accessibility.interaction.mouse.title" xml:space="preserve">
+<value>Mouse</value>
+  </data>
+  <data name="accessibility.interaction.mouse.subtitle" xml:space="preserve">
+<value>Mga key ng mouse, bilis, acceleration</value>
+  </data>
+
+  <data name="accessibility.interaction.eye_control.title" xml:space="preserve">
+<value>Pagkontrol sa mata</value>
+  </data>
+  <data name="accessibility.interaction.eye_control.subtitle" xml:space="preserve">
+<value>Eye tracker, text-to-speech</value>
+  </data>
+
+
+
+  <data name="privacy_and_security.security" xml:space="preserve">
+<value>Seguridad</value>
+  </data>
+
+  <data name="privacy_and_security.security.windows_security.title" xml:space="preserve">
+<value>Seguridad ng Windows</value>
+  </data>
+  <data name="privacy_and_security.security.windows_security.subtitle" xml:space="preserve">
+<value>Antivirus, browser, firewall at proteksyon ng network para sa iyong device</value>
+  </data>
+
+  <data name="privacy_and_security.security.find_my_device.title" xml:space="preserve">
+<value>Hanapin ayon sa device</value>
+  </data>
+  <data name="privacy_and_security.security.find_my_device.subtitle" xml:space="preserve">
+<value>Subaybayan ang iyong device kung sa tingin mo ay nawala mo ito</value>
+  </data>
+
+
+  <data name="privacy_and_security.windows_permissions" xml:space="preserve">
+<value>Mga pahintulot sa Windows</value>
+  </data>
+
+  <data name="privacy_and_security.windows_permissions.recommendations_and_offers.title" xml:space="preserve">
+<value>Mga Rekomendasyon at alok</value>
+  </data>
+  <data name="privacy_and_security.windows_permissions.recommendations_and_offers.subtitle" xml:space="preserve">
+<value>Advertising ID, mga personalized na alok, lokal na konteksto, paglulunsad ng app, mga mungkahi sa setting, mga tool sa pagiging produktibo</value>
+  </data>
+
+  <data name="privacy_and_security.windows_permissions.speech.title" xml:space="preserve">
+<value>Pagsasalita</value>
+  </data>
+  <data name="privacy_and_security.windows_permissions.speech.subtitle" xml:space="preserve">
+<value>Online na pagkilala sa pagsasalita para sa pagdidikta at iba pang mga pakikipag-ugnayan na batay sa boses</value>
+  </data>
+
+  <data name="privacy_and_security.windows_permissions.inking_and_typing_personalization.title" xml:space="preserve">
+<value>Pag-personalize ng inking at pag-type</value>
+  </data>
+  <data name="privacy_and_security.windows_permissions.inking_and_typing_personalization.subtitle" xml:space="preserve">
+<value>Custom na diksyunaryo, mga salita sa iyong diksyunaryo</value>
+  </data>
+
+  <data name="privacy_and_security.windows_permissions.diagnostics_and_feedback.title" xml:space="preserve">
+<value>Diagnostics at feedback</value>
+  </data>
+  <data name="privacy_and_security.windows_permissions.diagnostics_and_feedback.subtitle" xml:space="preserve">
+<value>Data ng diagnostic, data ng inking at pagta-type, dalas ng feedback</value>
+  </data>
+
+  <data name="privacy_and_security.windows_permissions.search.title" xml:space="preserve">
+<value>Paghahanap</value>
+  </data>
+  <data name="privacy_and_security.windows_permissions.search.subtitle" xml:space="preserve">
+<value>Kasaysayan ng paghahanap, mga app sa paghahanap, pananalita sa konteksto ng ulap, pag-index ng paghahanap</value>
+  </data>
+
+
+  <data name="privacy_and_security.app_permissions" xml:space="preserve">
+<value>Mga pahintulot sa app</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.location.title" xml:space="preserve">
+<value>Lokasyon</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.camera.title" xml:space="preserve">
+<value>Camera</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.microphone.title" xml:space="preserve">
+<value>Mikropono</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.voice_activation.title" xml:space="preserve">
+<value>Pagsasaaktibo ng boses</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.notification.title" xml:space="preserve">
+<value>Notification</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.contacts.title" xml:space="preserve">
+<value>Mga Contact</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.calendar.title" xml:space="preserve">
+<value>Kalendaryo</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.phone_calls.title" xml:space="preserve">
+<value>Mga tawag sa telepono</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.call_history.title" xml:space="preserve">
+<value>Kasaysayan ng tawag</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.email.title" xml:space="preserve">
+<value>Email</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.tasks.title" xml:space="preserve">
+<value>Mga Gawain</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.messaging.title" xml:space="preserve">
+<value>Pagmemensahe</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.radios.title" xml:space="preserve">
+<value>Radios</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.other_devices.title" xml:space="preserve">
+<value>Iba pang mga device</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.app_diagnostics.title" xml:space="preserve">
+<value>Mga diagnostic ng app</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.automatic_file_downloads.title" xml:space="preserve">
+<value>Mga awtomatikong pag-download ng file</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.documents.title" xml:space="preserve">
+<value>Mga Dokumento</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.downloads_folder.title" xml:space="preserve">
+<value>Folder ng mga download</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.music_library.title" xml:space="preserve">
+<value>Music library</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.pictures.title" xml:space="preserve">
+<value>Mga Larawan</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.videos.title" xml:space="preserve">
+<value>Mga Video</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.file_system.title" xml:space="preserve">
+<value>File system</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.screenshot_borders.title" xml:space="preserve">
+<value>Mga hangganan ng screenshot</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.screenshots_and_screen_recording.title" xml:space="preserve">
+<value>Mga screenshot at pag-record ng screen</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.text_and_image_generation.title" xml:space="preserve">
+<value>Pagbuo ng teksto at larawan</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.passkeys.title" xml:space="preserve">
+<value>Mga Passkey</value>
+  </data>
+
+</root>

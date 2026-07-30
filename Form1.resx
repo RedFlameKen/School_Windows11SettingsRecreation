@@ -97,144 +97,731 @@
     <value>Manage, add, and remove devices</value>
   </data>
 
-  <data name="system.display.title" xml:space="preserve">
+
+
+  <data name="system.system.display.title" xml:space="preserve">
     <value>Display</value>
   </data>
-  <data name="system.display.subtitle" xml:space="preserve">
+  <data name="system.system.display.subtitle" xml:space="preserve">
     <value>Monitors, brightness, night light, display profile</value>
   </data>
 
-  <data name="system.sound.title" xml:space="preserve">
+  <data name="system.system.sound.title" xml:space="preserve">
     <value>Sound</value>
   </data>
-  <data name="system.sound.subtitle" xml:space="preserve">
+  <data name="system.system.sound.subtitle" xml:space="preserve">
     <value>Volume levels, output, input, sound devices</value>
   </data>
 
-  <data name="system.notifications.title" xml:space="preserve">
+  <data name="system.system.notifications.title" xml:space="preserve">
     <value>Notifications</value>
   </data>
-  <data name="system.notifications.subtitle" xml:space="preserve">
+  <data name="system.system.notifications.subtitle" xml:space="preserve">
     <value>Alerts from apps and systems, do not disturb</value>
   </data>
 
-  <data name="system.focus.title" xml:space="preserve">
+  <data name="system.system.focus.title" xml:space="preserve">
     <value>Focus</value>
   </data>
-  <data name="system.focus.subtitle" xml:space="preserve">
+  <data name="system.system.focus.subtitle" xml:space="preserve">
     <value>Reduce distractions</value>
   </data>
 
-  <data name="system.power_and_battery.title" xml:space="preserve">
+  <data name="system.system.power_and_battery.title" xml:space="preserve">
     <value>Power &amp;&amp; Battery</value>
   </data>
-  <data name="system.power_and_battery.subtitle" xml:space="preserve">
+  <data name="system.system.power_and_battery.subtitle" xml:space="preserve">
     <value>Screen and sleep, battery usage, power mode, energy saver</value>
   </data>
 
-  <data name="system.storage.title" xml:space="preserve">
+  <data name="system.system.storage.title" xml:space="preserve">
     <value>Storage</value>
   </data>
-  <data name="system.storage.subtitle" xml:space="preserve">
+  <data name="system.system.storage.subtitle" xml:space="preserve">
     <value>Storage space, drives, configuration rules</value>
   </data>
 
-  <data name="system.nearby_sharing.title" xml:space="preserve">
+  <data name="system.system.nearby_sharing.title" xml:space="preserve">
     <value>Nearby sharing</value>
   </data>
-  <data name="system.nearby_sharing.subtitle" xml:space="preserve">
+  <data name="system.system.nearby_sharing.subtitle" xml:space="preserve">
     <value>Discoverability, received files location</value>
   </data>
 
-  <data name="system.multitasking.title" xml:space="preserve">
+  <data name="system.system.multitasking.title" xml:space="preserve">
     <value>Multitasking</value>
   </data>
-  <data name="system.multitasking.subtitle" xml:space="preserve">
+  <data name="system.system.multitasking.subtitle" xml:space="preserve">
     <value>Snap windows, desktops, task switching</value>
   </data>
 
-  <data name="system.advanced.title" xml:space="preserve">
+  <data name="system.system.advanced.title" xml:space="preserve">
     <value>Advanced</value>
   </data>
-  <data name="system.advanced.subtitle" xml:space="preserve">
+  <data name="system.system.advanced.subtitle" xml:space="preserve">
     <value>Performance, optimization, and developer features</value>
   </data>
 
-  <data name="system.activation.title" xml:space="preserve">
+  <data name="system.system.activation.title" xml:space="preserve">
     <value>Activation</value>
   </data>
-  <data name="system.activation.subtitle" xml:space="preserve">
+  <data name="system.system.activation.subtitle" xml:space="preserve">
     <value>Activation state, subscription, product key</value>
   </data>
 
-  <data name="system.troubleshooting.title" xml:space="preserve">
+  <data name="system.system.troubleshooting.title" xml:space="preserve">
     <value>Troubleshooting</value>
   </data>
-  <data name="system.troubleshooting.subtitle" xml:space="preserve">
+  <data name="system.system.troubleshooting.subtitle" xml:space="preserve">
     <value>Recommended troubleshooters, preferences, history</value>
   </data>
 
-  <data name="system.recovery.title" xml:space="preserve">
+  <data name="system.system.recovery.title" xml:space="preserve">
     <value>Recovery</value>
   </data>
-  <data name="system.recovery.subtitle" xml:space="preserve">
+  <data name="system.system.recovery.subtitle" xml:space="preserve">
     <value>Reset, advanced startup, go back</value>
   </data>
 
-  <data name="system.projecting_to_this_pc.title" xml:space="preserve">
+  <data name="system.system.projecting_to_this_pc.title" xml:space="preserve">
     <value>Projecting to this PC</value>
   </data>
-  <data name="system.projecting_to_this_pc.subtitle" xml:space="preserve">
+  <data name="system.system.projecting_to_this_pc.subtitle" xml:space="preserve">
     <value>Permissions, pairing PIN, discoverability</value>
   </data>
 
-  <data name="system.remote_desktop.title" xml:space="preserve">
+  <data name="system.system.remote_desktop.title" xml:space="preserve">
     <value>Remote Desktop</value>
   </data>
-  <data name="system.remote_desktop.subtitle" xml:space="preserve">
+  <data name="system.system.remote_desktop.subtitle" xml:space="preserve">
     <value>Remote Desktop users, connection permissions</value>
   </data>
 
-  <data name="system.clipboard.title" xml:space="preserve">
+  <data name="system.system.clipboard.title" xml:space="preserve">
     <value>Clipboard</value>
   </data>
-  <data name="system.clipboard.subtitle" xml:space="preserve">
+  <data name="system.system.clipboard.subtitle" xml:space="preserve">
     <value>Cut and copy history, sync, clear</value>
   </data>
 
-  <data name="system.system_components.title" xml:space="preserve">
+  <data name="system.system.system_components.title" xml:space="preserve">
     <value>System Components</value>
   </data>
-  <data name="system.system_components.subtitle" xml:space="preserve">
+  <data name="system.system.system_components.subtitle" xml:space="preserve">
     <value>Manage system components that are preinstalled on Windows</value>
   </data>
 
-  <data name="system.ai_components.title" xml:space="preserve">
+  <data name="system.system.ai_components.title" xml:space="preserve">
     <value>AI components</value>
   </data>
-  <data name="system.ai_components.subtitle" xml:space="preserve">
+  <data name="system.system.ai_components.subtitle" xml:space="preserve">
     <value>View AI components that are installed on your PC</value>
   </data>
 
-  <data name="system.optional_features.title" xml:space="preserve">
+  <data name="system.system.optional_features.title" xml:space="preserve">
     <value>Optional features</value>
   </data>
-  <data name="system.optional_features.subtitle" xml:space="preserve">
+  <data name="system.system.optional_features.subtitle" xml:space="preserve">
     <value>Extra functionality for your device</value>
   </data>
 
-  <data name="system.about.title" xml:space="preserve">
+  <data name="system.system.about.title" xml:space="preserve">
     <value>About</value>
   </data>
-  <data name="system.about.subtitle" xml:space="preserve">
+  <data name="system.system.about.subtitle" xml:space="preserve">
     <value>Device specifications, rename PC, Windows specifications</value>
   </data>
 
-  <data name="network_and_internet.wifi.title" xml:space="preserve">
-    <value>WI-FI</value>
+
+
+  <data name="network_and_internet.network.wifi.title" xml:space="preserve">
+    <value>Wi-Fi</value>
   </data>
-  <data name="network_and_internet.wifi.subtitle" xml:space="preserve">
+  <data name="network_and_internet.network.wifi.subtitle" xml:space="preserve">
     <value>Connect, manage known networks, metered network</value>
+  </data>
+
+  <data name="network_and_internet.network.ethernet.title" xml:space="preserve">
+    <value>Ethernet</value>
+  </data>
+  <data name="network_and_internet.network.ethernet.subtitle" xml:space="preserve">
+    <value>Authentication, IP and DNS settings, metered network</value>
+  </data>
+
+  <data name="network_and_internet.network.vpn.title" xml:space="preserve">
+    <value>VPN</value>
+  </data>
+  <data name="network_and_internet.network.vpn.subtitle" xml:space="preserve">
+    <value>Add, connect, manage</value>
+  </data>
+
+  <data name="network_and_internet.network.mobile_hotspot.title" xml:space="preserve">
+    <value>Mobile hotspot</value>
+  </data>
+  <data name="network_and_internet.network.mobile_hotspot.subtitle" xml:space="preserve">
+    <value>Share your internet connection</value>
+  </data>
+
+  <data name="network_and_internet.network.airplane_mode.title" xml:space="preserve">
+    <value>Airplane mode</value>
+  </data>
+  <data name="network_and_internet.network.airplane_mode.subtitle" xml:space="preserve">
+    <value>Stop wireless communication</value>
+  </data>
+
+  <data name="network_and_internet.network.proxy.title" xml:space="preserve">
+    <value>Proxy</value>
+  </data>
+  <data name="network_and_internet.network.proxy.subtitle" xml:space="preserve">
+    <value>Proxy server for Wi-Fi and Ethernet connection</value>
+  </data>
+
+  <data name="network_and_internet.network.dial-up.title" xml:space="preserve">
+    <value>Dial-up</value>
+  </data>
+  <data name="network_and_internet.network.dial-up.subtitle" xml:space="preserve">
+    <value>Set up a dial-up internet connection</value>
+  </data>
+
+  <data name="network_and_internet.network.advanced_network_settings.title" xml:space="preserve">
+    <value>Advanced network settings</value>
+  </data>
+  <data name="network_and_internet.network.advanced_network_settings.subtitle" xml:space="preserve">
+    <value>View all network adapters, network reset</value>
+  </data>
+
+
+
+  <data name="personalization.personalization.background.title" xml:space="preserve">
+    <value>Background</value>
+  </data>
+  <data name="personalization.personalization.background.subtitle" xml:space="preserve">
+    <value>Background image, color, slideshow</value>
+  </data>
+
+  <data name="personalization.personalization.colors.title" xml:space="preserve">
+    <value>Colors</value>
+  </data>
+  <data name="personalization.personalization.colors.subtitle" xml:space="preserve">
+    <value>Accent color, transparency effects, color theme</value>
+  </data>
+
+  <data name="personalization.personalization.themes.title" xml:space="preserve">
+    <value>Themes</value>
+  </data>
+  <data name="personalization.personalization.themes.subtitle" xml:space="preserve">
+    <value>Install, create, manage</value>
+  </data>
+
+  <data name="personalization.personalization.dynamic_lighting.title" xml:space="preserve">
+    <value>Dynamic Lighting</value>
+  </data>
+  <data name="personalization.personalization.dynamic_lighting.subtitle" xml:space="preserve">
+    <value>Connected devices, effects, app settings</value>
+  </data>
+
+  <data name="personalization.personalization.lock_screen.title" xml:space="preserve">
+    <value>Lock screen</value>
+  </data>
+  <data name="personalization.personalization.lock_screen.subtitle" xml:space="preserve">
+    <value>Lock screen images, apps, animation</value>
+  </data>
+
+  <data name="personalization.personalization.text_input.title" xml:space="preserve">
+    <value>Text input</value>
+  </data>
+  <data name="personalization.personalization.text_input.subtitle" xml:space="preserve">
+    <value>Touch keyboard, voice typing, emoji and more, input method editor</value>
+  </data>
+
+  <data name="personalization.personalization.start.title" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="personalization.personalization.start.subtitle" xml:space="preserve">
+    <value>Recent apps and items, toolbars</value>
+  </data>
+
+  <data name="personalization.personalization.taskbar.title" xml:space="preserve">
+    <value>Taskbar</value>
+  </data>
+  <data name="personalization.personalization.taskbar.subtitle" xml:space="preserve">
+    <value>Taskbar behaviors, system pins</value>
+  </data>
+
+  <data name="personalization.personalization.fonts.title" xml:space="preserve">
+    <value>Fonts</value>
+  </data>
+  <data name="personalization.personalization.fonts.subtitle" xml:space="preserve">
+    <value>Install, manage</value>
+  </data>
+
+  <data name="personalization.personalization.device_usage.title" xml:space="preserve">
+    <value>Device usage</value>
+  </data>
+  <data name="personalization.personalization.device_usage.subtitle" xml:space="preserve">
+    <value>Select all the ways you plan to use your device to get personalized tips, ads, and recommendations within Microsoft experiences</value>
+  </data>
+
+
+
+  <data name="apps.apps.installed_apps.title" xml:space="preserve">
+    <value>Installed apps</value>
+  </data>
+  <data name="apps.apps.installed_apps.subtitle" xml:space="preserve">
+    <value>Uninstall and manage apps on your PC</value>
+  </data>
+
+  <data name="apps.apps.advanced_app_settings.title" xml:space="preserve">
+    <value>Advanced app settings</value>
+  </data>
+  <data name="apps.apps.advanced_app_settings.subtitle" xml:space="preserve">
+    <value>Choose where to get apps, archive apps, uninstall updates</value>
+  </data>
+
+  <data name="apps.apps.default_apps.title" xml:space="preserve">
+    <value>Default apps</value>
+  </data>
+  <data name="apps.apps.default_apps.subtitle" xml:space="preserve">
+    <value>Defaults for file and link types, other defaults</value>
+  </data>
+
+  <data name="apps.apps.actions.title" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="apps.apps.actions.subtitle" xml:space="preserve">
+    <value>Windows can recommend actions from these apps.</value>
+  </data>
+
+  <data name="apps.apps.offline_maps.title" xml:space="preserve">
+    <value>Offline maps</value>
+  </data>
+  <data name="apps.apps.offline_maps.subtitle" xml:space="preserve">
+    <value>Downloads, storage location, map updates</value>
+  </data>
+
+  <data name="apps.apps.apps_for_websites.title" xml:space="preserve">
+    <value>Apps for websites</value>
+  </data>
+  <data name="apps.apps.apps_for_websites.subtitle" xml:space="preserve">
+    <value>Websites that can open in an app instead of a browser</value>
+  </data>
+
+  <data name="apps.apps.video_playback.title" xml:space="preserve">
+    <value>Video Playback</value>
+  </data>
+  <data name="apps.apps.video_playback.subtitle" xml:space="preserve">
+    <value>Video adjustments, HDR streaming battery options</value>
+  </data>
+
+  <data name="apps.apps.startup.title" xml:space="preserve">
+    <value>Startup</value>
+  </data>
+  <data name="apps.apps.startup.subtitle" xml:space="preserve">
+    <value>Apps that start automatically when you sign in</value>
+  </data>
+
+  <data name="apps.apps.resume.title" xml:space="preserve">
+    <value>Resume</value>
+  </data>
+  <data name="apps.apps.resume.subtitle" xml:space="preserve">
+    <value>Continue work across devices</value>
+  </data>
+
+
+  <data name="accounts.account_settings" xml:space="preserve">
+    <value>Account Settings</value>
+  </data>
+
+  <data name="accounts.account_settings.your_info.title" xml:space="preserve">
+    <value>Your info</value>
+  </data>
+  <data name="accounts.account_settings.your_info.subtitle" xml:space="preserve">
+    <value>Profile photo</value>
+  </data>
+
+  <data name="accounts.account_settings.sign-in_options.title" xml:space="preserve">
+    <value>Sign-in options</value>
+  </data>
+  <data name="accounts.account_settings.sign-in_options.subtitle" xml:space="preserve">
+    <value>Windows hello, security key, password, dynamic lock</value>
+  </data>
+
+  <data name="accounts.account_settings.linked_devices.title" xml:space="preserve">
+    <value>Linked devices</value>
+  </data>
+  <data name="accounts.account_settings.linked_devices.subtitle" xml:space="preserve">
+    <value>Find, repair, and manage devices that are signed in with your Microsoft account</value>
+  </data>
+
+  <data name="accounts.account_settings.your_accounts.title" xml:space="preserve">
+    <value>Your accounts</value>
+  </data>
+  <data name="accounts.account_settings.your_accounts.subtitle" xml:space="preserve">
+    <value>Add or manage accounts used in Windows</value>
+  </data>
+
+  <data name="accounts.account_settings.family.title" xml:space="preserve">
+    <value>Family</value>
+  </data>
+  <data name="accounts.account_settings.family.subtitle" xml:space="preserve">
+    <value>Manage your family group, edit account types and device permissions</value>
+  </data>
+
+  <data name="accounts.account_settings.windows_backup.title" xml:space="preserve">
+    <value>Windows backup</value>
+  </data>
+  <data name="accounts.account_settings.windows_backup.subtitle" xml:space="preserve">
+    <value>Back up your files, apps, preferences to restore them across devices</value>
+  </data>
+
+  <data name="accounts.account_settings.other_users.title" xml:space="preserve">
+    <value>Other users</value>
+  </data>
+  <data name="accounts.account_settings.other_users.subtitle" xml:space="preserve">
+    <value>Device access, work or school users, kiosk, assigned access</value>
+  </data>
+
+  <data name="accounts.account_settings.access_work_or_school.title" xml:space="preserve">
+    <value>Access work or school</value>
+  </data>
+  <data name="accounts.account_settings.access_work_or_school.subtitle" xml:space="preserve">
+    <value>Organization resources like email, apps, and network</value>
+  </data>
+
+  <data name="accounts.account_settings.passkeys.title" xml:space="preserve">
+    <value>Passkeys</value>
+  </data>
+  <data name="accounts.account_settings.passkeys.subtitle" xml:space="preserve">
+    <value>Use your face, fingerprint, or PIN to sign in to apps and websites</value>
+  </data>
+
+
+  <data name="accounts.related_settings" xml:space="preserve">
+    <value>Related Settings</value>
+  </data>
+
+  <data name="accounts.related_settings.account_privacy.title" xml:space="preserve">
+    <value>Account privacy</value>
+  </data>
+  <data name="accounts.related_settings.account_privacy.subtitle" xml:space="preserve">
+    <value>View your privacy dashboard and manage activity data</value>
+  </data>
+
+  <data name="accounts.related_settings.subscriptions.title" xml:space="preserve">
+    <value>Subscriptions</value>
+  </data>
+  <data name="accounts.related_settings.subscriptions.subtitle" xml:space="preserve">
+    <value>Manage services and subscriptions from Microsoft</value>
+  </data>
+
+  <data name="accounts.related_settings.payment_options.title" xml:space="preserve">
+    <value>Payment options</value>
+  </data>
+  <data name="accounts.related_settings.payment_options.subtitle" xml:space="preserve">
+    <value>Manage how you pay for purchases with your Microsoft account</value>
+  </data>
+
+  <data name="accounts.related_settings.order_history.title" xml:space="preserve">
+    <value>Order history</value>
+  </data>
+  <data name="accounts.related_settings.order_history.subtitle" xml:space="preserve">
+    <value>View recent purchases made with your Microsoft account</value>
+  </data>
+
+  <data name="accounts.related_settings.account_and_billing_help.title" xml:space="preserve">
+    <value>Account &amp;&amp; billing help</value>
+  </data>
+  <data name="accounts.related_settings.account_and_billing_help.subtitle" xml:space="preserve">
+    <value>Get support for subscriptions, payments, and billing</value>
+  </data>
+
+  
+
+  <data name="accessibility.vision" xml:space="preserve">
+    <value>Vision</value>
+  </data>
+
+  <data name="accessibility.vision.text_size.title" xml:space="preserve">
+    <value>Text size</value>
+  </data>
+  <data name="accessibility.vision.text_size.subtitle" xml:space="preserve">
+    <value>Text size that appears throughout Windows and your apps</value>
+  </data>
+
+  <data name="accessibility.vision.visual_effects.title" xml:space="preserve">
+    <value>Visual effects</value>
+  </data>
+  <data name="accessibility.vision.visual_effects.subtitle" xml:space="preserve">
+    <value>Scroll bars, transparency, animations, notification timeout</value>
+  </data>
+
+  <data name="accessibility.vision.mouse_pointer_and_touch.title" xml:space="preserve">
+    <value>Mouse pointer and touch</value>
+  </data>
+  <data name="accessibility.vision.mouse_pointer_and_touch.subtitle" xml:space="preserve">
+    <value>Mouse pointer color, size</value>
+  </data>
+
+  <data name="accessibility.vision.text_cursor.title" xml:space="preserve">
+    <value>Text cursor</value>
+  </data>
+  <data name="accessibility.vision.text_cursor.subtitle" xml:space="preserve">
+    <value>Appearance and thickness, text cursor indicator</value>
+  </data>
+
+  <data name="accessibility.vision.magnifier.title" xml:space="preserve">
+    <value>Magnifier</value>
+  </data>
+  <data name="accessibility.vision.magnifier.subtitle" xml:space="preserve">
+  <value>Magnifier settings, zoom increment</value>
+  </data>
+
+  <data name="accessibility.vision.color_filters.title" xml:space="preserve">
+    <value>Color filters</value>
+  </data>
+  <data name="accessibility.vision.color_filters.subtitle" xml:space="preserve">
+    <value>Colorblindness, filters, grayscale, inverted</value>
+  </data>
+
+  <data name="accessibility.vision.contrast_themes.title" xml:space="preserve">
+    <value>Contrast themes</value>
+  </data>
+  <data name="accessibility.vision.contrast_themes.subtitle" xml:space="preserve">
+    <value>Color themes for low vision, light sensitivity</value>
+  </data>
+
+  <data name="accessibility.vision.narrator.title" xml:space="preserve">
+    <value>Narrator</value>
+  </data>
+  <data name="accessibility.vision.narrator.subtitle" xml:space="preserve">
+    <value>Voice, verbosity, keyboard, braille</value>
+  </data>
+
+
+  <data name="accessibility.hearing" xml:space="preserve">
+    <value>Hearing</value>
+  </data>
+  
+  <data name="accessibility.hearing.audio.title" xml:space="preserve">
+    <value>Audio</value>
+  </data>
+  <data name="accessibility.hearing.audio.subtitle" xml:space="preserve">
+    <value>Mono audio, audio notifications</value>
+  </data>
+
+  <data name="accessibility.hearing.hearing_devices.title" xml:space="preserve">
+    <value>Hearing devices</value>
+  </data>
+  <data name="accessibility.hearing.hearing_devices.subtitle" xml:space="preserve">
+    <value>Presets, environment, sound control, audio routing</value>
+  </data>
+
+  <data name="accessibility.hearing.captions.title" xml:space="preserve">
+    <value>Captions</value>
+  </data>
+  <data name="accessibility.hearing.captions.subtitle" xml:space="preserve">
+    <value>Styles, live captions</value>
+  </data>
+
+
+  <data name="accessibility.interaction" xml:space="preserve">
+    <value>Interaction</value>
+  </data>
+
+  <data name="accessibility.interaction.speech.title" xml:space="preserve">
+    <value>Speech</value>
+  </data>
+  <data name="accessibility.interaction.speech.subtitle" xml:space="preserve">
+    <value>Voice access, voice typing</value>
+  </data>
+
+  <data name="accessibility.interaction.keyboard.title" xml:space="preserve">
+    <value>Keyboard</value>
+  </data>
+  <data name="accessibility.interaction.keyboard.subtitle" xml:space="preserve">
+    <value>Sticky, Filter, and Toggle keys, on-screen keyboard</value>
+  </data>
+
+  <data name="accessibility.interaction.mouse.title" xml:space="preserve">
+    <value>Mouse</value>
+  </data>
+  <data name="accessibility.interaction.mouse.subtitle" xml:space="preserve">
+    <value>Mouse keys, speed, acceleration</value>
+  </data>
+
+  <data name="accessibility.interaction.eye_control.title" xml:space="preserve">
+    <value>Eye control</value>
+  </data>
+  <data name="accessibility.interaction.eye_control.subtitle" xml:space="preserve">
+    <value>Eye tracker, text-to-speech</value>
+  </data>
+
+
+  <data name="privacy_and_security.security" xml:space="preserve">
+    <value>Security</value>
+  </data>
+
+  <data name="privacy_and_security.security.windows_security.title" xml:space="preserve">
+    <value>Windows Security</value>
+  </data>
+  <data name="privacy_and_security.security.windows_security.subtitle" xml:space="preserve">
+    <value>Antivirus, browser, firewall and network protection for your device</value>
+  </data>
+
+  <data name="privacy_and_security.security.find_my_device.title" xml:space="preserve">
+    <value>Find by device</value>
+  </data>
+  <data name="privacy_and_security.security.find_my_device.subtitle" xml:space="preserve">
+    <value>Track your device if you think you've lost it</value>
+  </data>
+
+
+  <data name="privacy_and_security.windows_permissions" xml:space="preserve">
+    <value>Windows permissions</value>
+  </data>
+
+  <data name="privacy_and_security.windows_permissions.recommendations_and_offers.title" xml:space="preserve">
+    <value>Recommendations &amp;&amp; offers</value>
+  </data>
+  <data name="privacy_and_security.windows_permissions.recommendations_and_offers.subtitle" xml:space="preserve">
+    <value>Advertising ID, personalized offers, local context, app launches, setting suggestions, productivity tools</value>
+  </data>
+
+  <data name="privacy_and_security.windows_permissions.speech.title" xml:space="preserve">
+    <value>Speech</value>
+  </data>
+  <data name="privacy_and_security.windows_permissions.speech.subtitle" xml:space="preserve">
+    <value>Online speech recognition for dictation and other voice-based interactions</value>
+  </data>
+
+  <data name="privacy_and_security.windows_permissions.inking_and_typing_personalization.title" xml:space="preserve">
+    <value>Inking &amp;&amp; typing personalization</value>
+  </data>
+  <data name="privacy_and_security.windows_permissions.inking_and_typing_personalization.subtitle" xml:space="preserve">
+    <value>Custom dictionary, words in your dictionary</value>
+  </data>
+
+  <data name="privacy_and_security.windows_permissions.diagnostics_and_feedback.title" xml:space="preserve">
+    <value>Diagnostics &amp;&amp; feedback</value>
+  </data>
+  <data name="privacy_and_security.windows_permissions.diagnostics_and_feedback.subtitle" xml:space="preserve">
+    <value>Diagnostic data, inking and typing data, feedback frequency</value>
+  </data>
+
+  <data name="privacy_and_security.windows_permissions.search.title" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="privacy_and_security.windows_permissions.search.subtitle" xml:space="preserve">
+    <value>Search history, search apps, cloud context speech, search indexing</value>
+  </data>
+
+
+  <data name="privacy_and_security.app_permissions" xml:space="preserve">
+    <value>App permissions</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.location.title" xml:space="preserve">
+    <value>Location</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.camera.title" xml:space="preserve">
+    <value>Camera</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.microphone.title" xml:space="preserve">
+    <value>Microphone</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.voice_activation.title" xml:space="preserve">
+    <value>Voice activation</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.notification.title" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.contacts.title" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.calendar.title" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.phone_calls.title" xml:space="preserve">
+    <value>Phone calls</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.call_history.title" xml:space="preserve">
+    <value>Call history</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.email.title" xml:space="preserve">
+    <value>Email</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.tasks.title" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.messaging.title" xml:space="preserve">
+    <value>Messaging</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.radios.title" xml:space="preserve">
+    <value>Radios</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.other_devices.title" xml:space="preserve">
+    <value>Other devices</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.app_diagnostics.title" xml:space="preserve">
+    <value>App diagnostics</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.automatic_file_downloads.title" xml:space="preserve">
+    <value>Automatic file downloads</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.documents.title" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.downloads_folder.title" xml:space="preserve">
+    <value>Downloads folder</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.music_library.title" xml:space="preserve">
+    <value>Music library</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.pictures.title" xml:space="preserve">
+    <value>Pictures</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.videos.title" xml:space="preserve">
+    <value>Videos</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.file_system.title" xml:space="preserve">
+    <value>File system</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.screenshot_borders.title" xml:space="preserve">
+    <value>Screenshot borders</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.screenshots_and_screen_recording.title" xml:space="preserve">
+    <value>Screenshots and screen recording</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.text_and_image_generation.title" xml:space="preserve">
+    <value>Text and image generation</value>
+  </data>
+
+  <data name="privacy_and_security.app_permissions.passkeys.title" xml:space="preserve">
+    <value>Passkeys</value>
   </data>
 
 </root>
