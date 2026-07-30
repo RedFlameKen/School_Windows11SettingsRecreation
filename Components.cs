@@ -18,6 +18,15 @@ class FocusableControl : UserControl {
     [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
     public Action actionEvent {get; set;}
 
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+    public Color backColor {get; set;} = Color.Transparent;
+
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+    public Color hoverColor {get; set;} = Color.White;
+
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+    public Color activeColor {get; set;} = Color.DimGray;
+
     public FocusableControl(bool focusable=true){
         this.focusable=focusable;
         SetStyle(ControlStyles.Selectable, focusable);
@@ -26,11 +35,11 @@ class FocusableControl : UserControl {
         actionEvent = () => {};
 
         onActive = (active) => {
-            BackColor = active ? Color.DimGray : Color.Transparent;
+            BackColor = active ? activeColor : backColor;
         };
 
         onHover = (hovered) => {
-            BackColor = hovered ? Color.White : Color.Transparent;
+            BackColor = hovered ? hoverColor : backColor;
             // BackColor = Color.FromArgb(0xFF, 0xF3, 0xF3, 0xF3);
             Cursor    = hovered ? Cursors.Hand : Cursors.Default;
         };
@@ -137,13 +146,6 @@ class FocusableControl : UserControl {
     protected void forwardFocus(Control c){
         c.TabStop = false;
 
-        // c.MouseEnter += (e, o) => OnMouseEnter();
-        // c.MouseMove  += (_, _) => updateHover();
-        // c.MouseLeave += (_, _) => updateHover();
-        //
-        // c.MouseDown  += (_, e) => onActive(true);
-        // c.MouseUp    += (_, e) => onActive(false);
-
         c.MouseEnter += (o, e) => updateHover();
         c.MouseMove += (o, e) => updateHover();
         c.MouseLeave += (o, e) => onHover(false);
@@ -162,25 +164,11 @@ class FocusableControl : UserControl {
 
     }
 
-    // protected void passOverFocus(FocusableControl c){
-    //     c.TabStop = false;
-    //
-    //     c.OnMouseEnter = (_, _) => updateHover();
-    //     c.OnMouseMove = (_, _) => updateHover();
-    //     c.OnMouseLeave = (_, _) => updateHover();
-    //
-    //     c.OnGotFocus = (_, _) => onHover(true);
-    //     c.OnLostFocus = (_, _) => onHover(false);
-    //
-    //     c.OnMouseDown = (_, _) => onActive(true);
-    //     c.OnMouseUp = (_, _) => onActive(false);
-    // }
-
-
 }
 
 public class SearchBar : UserControl
 {
+    private PictureBox searchIcon;
     private TextBox input;
 
     [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
@@ -192,16 +180,42 @@ public class SearchBar : UserControl
 
     public SearchBar()
     {
-
+        BackColor = Color.White;
+        BorderStyle = BorderStyle.FixedSingle;
         AutoSize = true;
+        Margin = new Padding(3);
+
+
+        TableLayoutPanel wrap = new TableLayoutPanel(){
+            ColumnCount = 2,
+            RowCount = 1,
+            Dock = DockStyle.Fill,
+            AutoSize = true
+        };
+
+        wrap.ColumnStyles.Clear();
+        wrap.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+        wrap.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+        wrap.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+
+        searchIcon = new PictureBox(){
+            SizeMode = PictureBoxSizeMode.AutoSize,
+            Dock = DockStyle.Fill,
+            Image = ImageLoader.loadImage("search.svg"),
+        };
 
         input = new TextBox() {
             PlaceholderText = "Find a setting",
-            Dock = DockStyle.Fill,
-
+            Dock = DockStyle.Bottom,
+            // BackColor = Color.Transparent,
+            BorderStyle = BorderStyle.None,
+            TextAlign = HorizontalAlignment.Left,
         };
 
-        Controls.Add(input);
+        wrap.Controls.Add(searchIcon);
+        wrap.Controls.Add(input);
+
+        Controls.Add(wrap);
     }
 
 }

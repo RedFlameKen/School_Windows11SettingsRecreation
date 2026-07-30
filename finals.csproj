@@ -104,6 +104,7 @@
       <EmbeddedResource Include="assets/reset.svg" />
       <EmbeddedResource Include="assets/scan_type.svg" />
       <EmbeddedResource Include="assets/search_square.svg" />
+      <EmbeddedResource Include="assets/search.svg" />
       <EmbeddedResource Include="assets/server_link.svg" />
       <EmbeddedResource Include="assets/share.svg" />
       <EmbeddedResource Include="assets/shield_color.svg" />

@@ -74,17 +74,22 @@ partial class Form1
 
         topBarCenter.Controls.Add(search);
 
-        Panel topBarRight = new Panel(){
+        Panel topBarRight = new FlowLayoutPanel(){
             Dock = DockStyle.Right,
+            WrapContents = false,
+            FlowDirection = FlowDirection.RightToLeft,
         };
 
         Label languageLabel = new Label(){
             Text = ResourceManager.getString("languageText"),
-            Dock = DockStyle.Left
+            TextAlign = ContentAlignment.MiddleRight,
+            Anchor = (AnchorStyles.Top | AnchorStyles.Bottom),
+            AutoSize = true,
         };
 
         languageBox = new ComboBox(){
-            Dock = DockStyle.Fill,
+            AutoSize = true,
+            Anchor = (AnchorStyles.Top | AnchorStyles.Bottom),
         };
 
 
@@ -93,7 +98,9 @@ partial class Form1
             ResourceManager.getString("filipinoLang"),
         });
 
-        languageBox.TextChanged += (_, _) => {
+        languageBox.SelectedIndex = 0;
+
+        languageBox.SelectedValueChanged += (_, _) => {
             switch (languageBox.SelectedIndex)
             {
                 case 1:
@@ -106,8 +113,8 @@ partial class Form1
             }
         };
 
-        topBarRight.Controls.Add(languageLabel);
         topBarRight.Controls.Add(languageBox);
+        topBarRight.Controls.Add(languageLabel);
 
 
         topBar = new Panel() {
