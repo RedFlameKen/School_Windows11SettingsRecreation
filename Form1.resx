@@ -669,7 +669,7 @@
   </data>
 
   <data name="privacy_and_security.security.find_my_device.title" xml:space="preserve">
-    <value>Find by device</value>
+    <value>Find my device</value>
   </data>
   <data name="privacy_and_security.security.find_my_device.subtitle" xml:space="preserve">
     <value>Track your device if you think you've lost it</value>
