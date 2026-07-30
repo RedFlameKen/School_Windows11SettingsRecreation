@@ -10,22 +10,22 @@ public partial class Form1 : Form
         = new List<NavMenuDetails>(){
         new NavMenuDetails() {
             id = "home",
-            icon = "home_color.svg",
+            icon = "home_color.png",
             items = new List<SettingComponent>(){
                 new SectionDetails(){
                     id = "recommended",
                     buttons = new List<ButtonDetails>(){
                         new ButtonDetails(){
                             id = "storage",
-                            icon = "storage.svg",
+                            icon = "storage.png",
                         },
                         new ButtonDetails(){
                             id = "default_apps",
-                            icon = "calendar_check.svg",
+                            icon = "calendar_check.png",
                         },
                         new ButtonDetails(){
                             id="search",
-                            icon = "search_square.svg",
+                            icon = "search_square.png",
                         }
                     }
                 },
@@ -34,15 +34,15 @@ public partial class Form1 : Form
                     buttons = new List<DeviceDetails>(){
                         new DeviceDetails(){
                             name = "AirPods Pro",
-                            icon = "headset.svg",
+                            icon = "headset.png",
                         },
                         new DeviceDetails(){
                             name = "GamePadPlus V3",
-                            icon = "controller.svg",
+                            icon = "controller.png",
                         },
                         new DeviceDetails(){
                             name = "soundcore R50i",
-                            icon = "headset.svg",
+                            icon = "headset.png",
                         }
                     }
                 }
@@ -50,104 +50,104 @@ public partial class Form1 : Form
         },
         new NavMenuDetails() {
             id = "system",
-            icon = "laptop_color.svg",
+            icon = "laptop_color.png",
             items = new List<SettingComponent>(){
                 new ButtonListDetails(){
                     id="system",
                     buttons = new List<ButtonDetails>(){
                         new ButtonDetails(){
                             id = "display",
-                            icon = "laptop.svg",
+                            icon = "laptop.png",
                         },
 
                         new ButtonDetails(){
                             id = "sound",
-                            icon = "speaker.svg",
+                            icon = "speaker.png",
                         },
 
                         new ButtonDetails(){
                             id = "notifications",
-                            icon = "alert.svg",
+                            icon = "alert.png",
                         },
 
                         new ButtonDetails(){
                             id = "focus",
-                            icon = "target.svg",
+                            icon = "target.png",
                         },
 
                         new ButtonDetails(){
                             id = "power_and_battery",
-                            icon = "power.svg",
+                            icon = "power.png",
                         },
 
                         new ButtonDetails(){
                             id = "storage",
-                            icon = "storage.svg",
+                            icon = "storage.png",
                         },
 
                         new ButtonDetails(){
                             id = "nearby_sharing",
-                            icon = "share.svg",
+                            icon = "share.png",
                         },
 
                         new ButtonDetails(){
                             id = "multitasking",
-                            icon = "panel_separate_window.svg",
+                            icon = "panel_separate_window.png",
                         },
 
                         new ButtonDetails(){
                             id = "advanced",
-                            icon = "wrench_screwdriver.svg",
+                            icon = "wrench_screwdriver.png",
                         },
 
                         new ButtonDetails(){
                             id = "activation",
-                            icon = "checkmark_circle.svg",
+                            icon = "checkmark_circle.png",
                         },
 
                         new ButtonDetails(){
                             id = "troubleshooting",
-                            icon = "wrench.svg",
+                            icon = "wrench.png",
                         },
 
                         new ButtonDetails(){
                             id = "recovery",
-                            icon = "reset.svg",
+                            icon = "reset.png",
                         },
 
                         new ButtonDetails(){
                             id = "projecting_to_this_pc",
-                            icon = "laptop_multiple.svg",
+                            icon = "laptop_multiple.png",
                         },
 
                         new ButtonDetails(){
                             id = "remote_desktop",
-                            icon = "remote.svg",
+                            icon = "remote.png",
                         },
 
                         new ButtonDetails(){
                             id = "clipboard",
-                            icon = "clipboard_paste.svg",
+                            icon = "clipboard_paste.png",
                         },
 
                         new ButtonDetails(){
                             id = "system_components",
-                            icon = "panel_right_gallery.svg",
+                            icon = "panel_right_gallery.png",
                         },
 
                         new ButtonDetails(){
                             id = "ai_components",
-                            icon = "sparkle.svg",
+                            icon = "sparkle.png",
                         },
 
                         new ButtonDetails(){
                             id = "optional_features",
-                            icon = "apps_add_in.svg",
+                            icon = "apps_add_in.png",
                         },
 
                         new ButtonDetails(){
                             id = "about",
-                            icon = "info.svg",
+                            icon = "info.png",
                         },
 
                     }
@@ -156,42 +156,42 @@ public partial class Form1 : Form
         },
         new NavMenuDetails() {
             id = "network_and_internet",
-            icon = "wifi_color.svg",
+            icon = "wifi_color.png",
             items = new List<SettingComponent>(){
                 new ButtonListDetails(){
                     id="network",
                     buttons = new List<ButtonDetails>(){
                         new ButtonDetails(){
                             id = "wifi",
-                            icon = "wifi.svg",
+                            icon = "wifi.png",
                         },
                         new ButtonDetails(){
                             id = "ethernet",
-                            icon = "plug_connected.svg",
+                            icon = "plug_connected.png",
                         },
                         new ButtonDetails(){
                             id = "vpn",
-                            icon = "shield_keyhole.svg",
+                            icon = "shield_keyhole.png",
                         },
                         new ButtonDetails(){
                             id = "mobile_hotspot",
-                            icon = "hotspot.svg",
+                            icon = "hotspot.png",
                         },
                         new ButtonDetails(){
                             id = "airplane_mode",
-                            icon = "airplane.svg",
+                            icon = "airplane.png",
                         },
                         new ButtonDetails(){
                             id = "proxy",
-                            icon = "server_link.svg",
+                            icon = "server_link.png",
                         },
                         new ButtonDetails(){
                             id = "dial-up",
-                            icon = "dialpad.svg",
+                            icon = "dialpad.png",
                         },
                         new ButtonDetails(){
                             id = "advanced_network_settings",
-                            icon = "globe_desktop.svg",
+                            icon = "globe_desktop.png",
                         },
                     }
                 }
@@ -199,50 +199,50 @@ public partial class Form1 : Form
         },
         new NavMenuDetails() {
             id = "personalization",
-            icon = "brush_color.svg",
+            icon = "brush_color.png",
             items = new List<SettingComponent>(){
                 new ButtonListDetails(){
                     id="personalization",
                     buttons = new List<ButtonDetails>(){
                         new ButtonDetails(){
                             id = "background",
-                            icon = "image.svg",
+                            icon = "image.png",
                         },
                         new ButtonDetails(){
                             id = "colors",
-                            icon = "color.svg",
+                            icon = "color.png",
                         },
                         new ButtonDetails(){
                             id = "themes",
-                            icon = "paint_brush.svg",
+                            icon = "paint_brush.png",
                         },
                         new ButtonDetails(){
                             id = "dynamic_lighting",
-                            icon = "circle_highlight.svg",
+                            icon = "circle_highlight.png",
                         },
                         new ButtonDetails(){
                             id = "lock_screen",
-                            icon = "calendar_lock.svg",
+                            icon = "calendar_lock.png",
                         },
                         new ButtonDetails(){
                             id = "text_input",
-                            icon = "keyboard.svg",
+                            icon = "keyboard.png",
                         },
                         new ButtonDetails(){
                             id = "start",
-                            icon = "app_folder.svg",
+                            icon = "app_folder.png",
                         },
                         new ButtonDetails(){
                             id = "taskbar",
-                            icon = "taskbar.svg",
+                            icon = "taskbar.png",
                         },
                         new ButtonDetails(){
                             id = "fonts",
-                            icon = "text_font.svg",
+                            icon = "text_font.png",
                         },
                         new ButtonDetails(){
                             id = "device_usage",
-                            icon = "laptop_checkmark.svg",
+                            icon = "laptop_checkmark.png",
                         },
                     }
                 }
@@ -250,46 +250,46 @@ public partial class Form1 : Form
         },
         new NavMenuDetails() {
             id = "apps",
-            icon = "apps_color.svg",
+            icon = "apps_color.png",
             items = new List<SettingComponent>(){
                 new ButtonListDetails(){
                     id="apps",
                     buttons = new List<ButtonDetails>(){
                         new ButtonDetails(){
                             id = "installed_apps",
-                            icon = "apps_list.svg",
+                            icon = "apps_list.png",
                         },
                         new ButtonDetails(){
                             id = "advanced_app_settings",
-                            icon = "table_settings.svg",
+                            icon = "table_settings.png",
                         },
                         new ButtonDetails(){
                             id = "default_apps",
-                            icon = "calendar_checkmark.svg",
+                            icon = "calendar_checkmark.png",
                         },
                         new ButtonDetails(){
                             id = "actions",
-                            icon = "sparkle_circle.svg",
+                            icon = "sparkle_circle.png",
                         },
                         new ButtonDetails(){
                             id = "offline_maps",
-                            icon = "map.svg",
+                            icon = "map.png",
                         },
                         new ButtonDetails(){
                             id = "apps_for_websites",
-                            icon = "arrow_square_up_right.svg",
+                            icon = "arrow_square_up_right.png",
                         },
                         new ButtonDetails(){
                             id = "video_playback",
-                            icon = "video.svg",
+                            icon = "video.png",
                         },
                         new ButtonDetails(){
                             id = "startup",
-                            icon = "calendar_assistant.svg",
+                            icon = "calendar_assistant.png",
                         },
                         new ButtonDetails(){
                             id = "resume",
-                            icon = "phone_desktop.svg",
+                            icon = "phone_desktop.png",
                         },
                     }
                 }
@@ -297,7 +297,7 @@ public partial class Form1 : Form
         },
         new NavMenuDetails() {
             id = "accounts",
-            icon = "person_color.svg",
+            icon = "person_color.png",
             items = new List<SettingComponent>(){
                 new ButtonListDetails(){
                     id="account_settings",
@@ -305,39 +305,39 @@ public partial class Form1 : Form
                     buttons = new List<ButtonDetails>(){
                         new ButtonDetails(){
                             id = "your_info",
-                            icon = "person.svg",
+                            icon = "person.png",
                         },
                         new ButtonDetails(){
                             id = "sign-in_options",
-                            icon = "key.svg",
+                            icon = "key.png",
                         },
                         new ButtonDetails(){
                             id = "linked_devices",
-                            icon = "tablet_laptop.svg",
+                            icon = "tablet_laptop.png",
                         },
                         new ButtonDetails(){
                             id = "your_accounts",
-                            icon = "people_list.svg",
+                            icon = "people_list.png",
                         },
                         new ButtonDetails(){
                             id = "family",
-                            icon = "person_heart.svg",
+                            icon = "person_heart.png",
                         },
                         new ButtonDetails(){
                             id = "windows_backup",
-                            icon = "archive_arrow_back.svg",
+                            icon = "archive_arrow_back.png",
                         },
                         new ButtonDetails(){
                             id = "other_users",
-                            icon = "person_add.svg",
+                            icon = "person_add.png",
                         },
                         new ButtonDetails(){
                             id = "access_work_or_school",
-                            icon = "briefcase.svg",
+                            icon = "briefcase.png",
                         },
                         new ButtonDetails(){
                             id = "passkeys",
-                            icon = "person_key.svg",
+                            icon = "person_key.png",
                         },
                     }
                 },
@@ -347,23 +347,23 @@ public partial class Form1 : Form
                     buttons = new List<ButtonDetails>(){
                         new ButtonDetails(){
                             id = "account_privacy",
-                            icon = "shield.svg",
+                            icon = "shield.png",
                         },
                         new ButtonDetails(){
                             id = "subscriptions",
-                            icon = "slide_text_person.svg",
+                            icon = "slide_text_person.png",
                         },
                         new ButtonDetails(){
                             id = "payment_options",
-                            icon = "credit_card_person.svg",
+                            icon = "credit_card_person.png",
                         },
                         new ButtonDetails(){
                             id = "order_history",
-                            icon = "history.svg",
+                            icon = "history.png",
                         },
                         new ButtonDetails(){
                             id = "account_and_billing_help",
-                            icon = "question_circle.svg",
+                            icon = "question_circle.png",
                         },
                     }
                 }
@@ -371,7 +371,7 @@ public partial class Form1 : Form
         },
         new NavMenuDetails() {
             id = "accessibility",
-            icon = "accessibility_color.svg",
+            icon = "accessibility_color.png",
             items = new List<SettingComponent>(){
                 new ButtonListDetails(){
                     id="vision",
@@ -379,35 +379,35 @@ public partial class Form1 : Form
                     buttons = new List<ButtonDetails>(){
                         new ButtonDetails(){
                             id = "text_size",
-                            icon = "text_font.svg",
+                            icon = "text_font.png",
                         },
                         new ButtonDetails(){
                             id = "visual_effects",
-                            icon = "sparkle.svg",
+                            icon = "sparkle.png",
                         },
                         new ButtonDetails(){
                             id = "mouse_pointer_and_touch",
-                            icon = "cursor.svg",
+                            icon = "cursor.png",
                         },
                         new ButtonDetails(){
                             id = "text_cursor",
-                            icon = "scan_type.svg",
+                            icon = "scan_type.png",
                         },
                         new ButtonDetails(){
                             id = "magnifier",
-                            icon = "zoom_in.svg",
+                            icon = "zoom_in.png",
                         },
                         new ButtonDetails(){
                             id = "color_filters",
-                            icon = "color.svg",
+                            icon = "color.png",
                         },
                         new ButtonDetails(){
                             id = "contrast_themes",
-                            icon = "contrast.svg",
+                            icon = "contrast.png",
                         },
                         new ButtonDetails(){
                             id = "narrator",
-                            icon = "desktop_speaker.svg",
+                            icon = "desktop_speaker.png",
                         },
                     }
                 },
@@ -417,15 +417,15 @@ public partial class Form1 : Form
                     buttons = new List<ButtonDetails>(){
                         new ButtonDetails(){
                             id = "audio",
-                            icon = "speaker.svg",
+                            icon = "speaker.png",
                         },
                         new ButtonDetails(){
                             id = "hearing_devices",
-                            icon = "ear.svg",
+                            icon = "ear.png",
                         },
                         new ButtonDetails(){
                             id = "captions",
-                            icon = "closed_caption.svg",
+                            icon = "closed_caption.png",
                         },
                     }
                 },
@@ -435,19 +435,19 @@ public partial class Form1 : Form
                     buttons = new List<ButtonDetails>(){
                         new ButtonDetails(){
                             id = "speech",
-                            icon = "mic.svg",
+                            icon = "mic.png",
                         },
                         new ButtonDetails(){
                             id = "keyboard",
-                            icon = "keyboard.svg",
+                            icon = "keyboard.png",
                         },
                         new ButtonDetails(){
                             id = "mouse",
-                            icon = "mouse.svg",
+                            icon = "mouse.png",
                         },
                         new ButtonDetails(){
                             id = "eye_control",
-                            icon = "eye_tracking.svg",
+                            icon = "eye_tracking.png",
                         },
                     }
                 },
@@ -455,7 +455,7 @@ public partial class Form1 : Form
         },
         new NavMenuDetails() {
             id = "privacy_and_security",
-            icon = "shield_color.svg",
+            icon = "shield_color.png",
             items = new List<SettingComponent>(){
                 new ButtonListDetails(){
                     id="security",
@@ -463,11 +463,11 @@ public partial class Form1 : Form
                     buttons = new List<ButtonDetails>(){
                         new ButtonDetails(){
                             id = "windows_security",
-                            icon = "shield.svg",
+                            icon = "shield.png",
                         },
                         new ButtonDetails(){
                             id = "find_my_device",
-                            icon = "locate_device.svg",
+                            icon = "locate_device.png",
                         },
                     }
                 },
@@ -477,23 +477,23 @@ public partial class Form1 : Form
                     buttons = new List<ButtonDetails>(){
                         new ButtonDetails(){
                             id = "recommendations_and_offers",
-                            icon = "lock_closed.svg",
+                            icon = "lock_closed.png",
                         },
                         new ButtonDetails(){
                             id = "speech",
-                            icon = "person_voice.svg",
+                            icon = "person_voice.png",
                         },
                         new ButtonDetails(){
                             id = "inking_and_typing_personalization",
-                            icon = "clipboard_task_list.svg",
+                            icon = "clipboard_task_list.png",
                         },
                         new ButtonDetails(){
                             id = "diagnostics_and_feedback",
-                            icon = "pulse_square.svg",
+                            icon = "pulse_square.png",
                         },
                         new ButtonDetails(){
                             id = "search",
-                            icon = "search_square.svg",
+                            icon = "search_square.png",
                         },
                     }
                 },
@@ -503,132 +503,132 @@ public partial class Form1 : Form
                     buttons = new List<ButtonDetails>(){
                         new ButtonDetails(){
                             id = "location",
-                            icon = "location_arrow.svg",
+                            icon = "location_arrow.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "camera",
-                            icon = "camera.svg",
+                            icon = "camera.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "microphone",
-                            icon = "mic.svg",
+                            icon = "mic.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "voice_activation",
-                            icon = "mic_record.svg",
+                            icon = "mic_record.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "notification",
-                            icon = "alert.svg",
+                            icon = "alert.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "contacts",
-                            icon = "people.svg",
+                            icon = "people.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "calendar",
-                            icon = "calendar.svg",
+                            icon = "calendar.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "phone_calls",
-                            icon = "call.svg",
+                            icon = "call.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "call_history",
-                            icon = "history.svg",
+                            icon = "history.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "email",
-                            icon = "mail.svg",
+                            icon = "mail.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "tasks",
-                            icon = "clipboard_task.svg",
+                            icon = "clipboard_task.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "messaging",
-                            icon = "chat.svg",
+                            icon = "chat.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "radios",
-                            icon = "radio.svg",
+                            icon = "radio.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "other_devices",
-                            icon = "tablet_laptop.svg",
+                            icon = "tablet_laptop.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "app_diagnostics",
-                            icon = "data_area.svg",
+                            icon = "data_area.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "automatic_file_downloads",
-                            icon = "cloud.svg",
+                            icon = "cloud.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "documents",
-                            icon = "folder_document.svg",
+                            icon = "folder_document.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "downloads_folder",
-                            icon = "drawer_arrow_download.svg",
+                            icon = "drawer_arrow_download.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "music_library",
-                            icon = "music_note_play.svg",
+                            icon = "music_note_play.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "pictures",
-                            icon = "image.svg",
+                            icon = "image.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "videos",
-                            icon = "video_clip.svg",
+                            icon = "video_clip.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "file_system",
-                            icon = "document.svg",
+                            icon = "document.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "screenshot_borders",
-                            icon = "image.svg",
+                            icon = "image.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "screenshots_and_screen_recording",
-                            icon = "image_copy.svg",
+                            icon = "image_copy.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "text_and_image_generation",
-                            icon = "laptop.svg",
+                            icon = "laptop.png",
                             hasSubtitle = false,
                         },
                         new ButtonDetails(){
                             id = "passkeys",
-                            icon = "person_key.svg",
+                            icon = "person_key.png",
                             hasSubtitle = false,
                         },
                     }

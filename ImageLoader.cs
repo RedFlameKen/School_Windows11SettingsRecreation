@@ -1,7 +1,5 @@
 namespace finals;
 
-using Svg;
-
 using System.Reflection;
 
 
@@ -18,15 +16,7 @@ class ImageLoader
             throw new Exception("Resource not found");
 
         using(stream) {
-            Image img;
-            string extension = getFileExtension(filePath).ToLower();
-            if (extension == "svg"){
-                SvgDocument svg = SvgDocument.Open<SvgDocument>(stream);
-                img = svg.Draw();
-            } else {
-                img = Image.FromStream(stream);
-            }
-            return img;
+            return Image.FromStream(stream);
         }
     }
 

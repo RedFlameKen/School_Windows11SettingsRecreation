@@ -221,7 +221,7 @@ public class SearchBar : UserControl
         searchIcon = new PictureBox(){
             SizeMode = PictureBoxSizeMode.AutoSize,
             Dock = DockStyle.Fill,
-            Image = ImageLoader.loadImage("search.svg"),
+            Image = ImageLoader.loadImage("search.png"),
         };
 
         input = new TextBox() {
@@ -359,7 +359,7 @@ class NavButton : FocusableControl {
         };
 
         ImageButton nb = new ImageButton(false){
-            Icon = ImageLoader.loadImage((navItem.icon == null ? "more.svg" :
+            Icon = ImageLoader.loadImage((navItem.icon == null ? "more.png" :
                         navItem.icon)),
             Label = ResourceManager.getString(navItem.id),
             Dock = DockStyle.Top,
@@ -850,7 +850,7 @@ class DeviceRow : UserControl {
         };
 
         moreBox = new IconButton(){
-            Icon = ImageLoader.loadImage("more.svg"),
+            Icon = ImageLoader.loadImage("more.png"),
             AutoSize = true,
             Anchor = (AnchorStyles.Right),
         };
@@ -922,7 +922,7 @@ class RouteButton : FocusableControl {
         chevronBox = new PictureBox() {
             SizeMode = PictureBoxSizeMode.AutoSize,
             Anchor = (AnchorStyles.Right),
-            Image = ImageLoader.loadImage("chevron_right.svg"),
+            Image = ImageLoader.loadImage("chevron_right.png"),
         };
 
         wrap.Controls.Add(pictureBox, 0, 0);
@@ -1031,7 +1031,7 @@ class RouteButtonSubtitled : FocusableControl {
         chevronBox = new PictureBox() {
             SizeMode = PictureBoxSizeMode.AutoSize,
             Anchor = (AnchorStyles.Right),
-            Image = ImageLoader.loadImage("chevron_right.svg"),
+            Image = ImageLoader.loadImage("chevron_right.png"),
         };
 
         wrap.Controls.Add(pictureBox, 0, 0);

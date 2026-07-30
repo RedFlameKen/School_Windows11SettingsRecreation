@@ -22,7 +22,7 @@ partial class Form1
 
     private void InitializeComponentSelfManaged(){
         IconButton backButton = new IconButton(){
-            Icon = ImageLoader.loadImage("arrow_left.svg"),
+            Icon = ImageLoader.loadImage("arrow_left.png"),
             Anchor = AnchorStyles.None
         };
 
