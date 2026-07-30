@@ -15,40 +15,6 @@ public partial class Form1 : Form
             items = new List<SettingComponent>(){
                 new DashboardDetails(){
                 }
-                // new SectionDetails(){
-                //     id = "recommended",
-                //     buttons = new List<ButtonDetails>(){
-                //         new ButtonDetails(){
-                //             id = "storage",
-                //             icon = "storage.png",
-                //         },
-                //         new ButtonDetails(){
-                //             id = "default_apps",
-                //             icon = "calendar_check.png",
-                //         },
-                //         new ButtonDetails(){
-                //             id="search",
-                //             icon = "search_square.png",
-                //         }
-                //     }
-                // },
-                // new DevicesSectionDetails(){
-                //     id = "devices",
-                //     buttons = new List<DeviceDetails>(){
-                //         new DeviceDetails(){
-                //             name = "AirPods Pro",
-                //             icon = "headset.png",
-                //         },
-                //         new DeviceDetails(){
-                //             name = "GamePadPlus V3",
-                //             icon = "controller.png",
-                //         },
-                //         new DeviceDetails(){
-                //             name = "soundcore R50i",
-                //             icon = "headset.png",
-                //         }
-                //     }
-                // }
             }
         },
         new NavMenuDetails() {
